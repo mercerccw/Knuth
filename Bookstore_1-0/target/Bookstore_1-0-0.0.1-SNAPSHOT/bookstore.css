@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+	font-family: Aria, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+table.listing {
+	width:80%;
+	border-collapse: collapse;
+}
+
+.listing td, th {
+	border: 1px solid #98bf21;
+	padding: 3px 7px 7px;
+}
+
+.listing th {
+	font-size: 1.0em;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	background-color: #a7c942;
+	color: #ffffff;
+}
+
+.listing tr.alt td {
+	color: #000000;
+	background-color: #eaf2d3;
+}
+
+a:link {
+	text-decoration: none;
+	color: #707070;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #707070:
+}
+
+a:hover{ text-decoration: underline;}
+a:active{ text-decoration: underline;}
+
+form.form { width: 70%; }
+
+form.form fieldset {
+	clear: both;
+	margin: 1em 0 0 0 ;
+	padding: 10px;
+	overflow: auto;
+	background-color: #a7c942;
+	border: 1px solid #888;
+}
+
+form.form legend {
+	font-weight: bold;
+}
+
+form.form div {
+	clear: both;
+	margin: 0;
+	padding 0.5em 0 0 0 ;
+	overflow: visible;
+}
+
+form.form label {
+	display: block;
+	float: left;
+	width: 120px;
+	text-align: right;
+	padding: 2px 1ex 6px 0;
+	vertical-align: baseline;
+}
+
+form.form label.after {
+	width: auto;
+	text-align: left;
+	display: inline;
+	float: none;
+}
+
+form.form label.long {
+	clear: both;
+	width: auto;
+	text-align: left;
+	float: none;
+}
+
+form.form input, form.form select, form.form textarea { float: left; }
+
+
+form.form .button-row {
+	text-align: right;
+}
+
+form.form .button-row input {
+	float: none;
+}
+
+form.form div.long label {
+	width: auto;
+	text-align: left;
+	float: none;
+}
+
+form.form div.long textaea {
+	width: 100%;
+}
+
+img { width: 150px ; }

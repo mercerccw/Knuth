@@ -1,0 +1,15 @@
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/CommandEdit.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/CommandList.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/dao/JDBC.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/CommandDelete.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/dao/jsondao/BookDAOJsonImpl.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/servlets/FrontController.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/dao/BookDAO.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/Command.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/dao/BookDAOJDBCImpl.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/beans/Book.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/dao/jsondao/JSON.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/CommandStatistics.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/CommandSave.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/CommandManager.java
+/Applications/MAMP/htdocs/Knuth/Bookstore_1-0/src/main/java/commands/Action.java

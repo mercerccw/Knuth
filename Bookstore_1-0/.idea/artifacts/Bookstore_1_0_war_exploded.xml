@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Bookstore_1-0:war exploded">
+    <output-path>$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Bookstore_1-0</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Bookstore_1-0" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-surefire-provider:1.1.0" />
+          <element id="library" level="project" name="Maven: org.apiguardian:apiguardian-api:1.0.0" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-launcher:1.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven.surefire:surefire-api:2.19.1" />
+          <element id="library" level="project" name="Maven: org.apache.maven.surefire:common-java5:2.19.1" />
+          <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-engine:1.5.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.10.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.10" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.10" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Bookstore_1-0/web/Web" />
+    </root>
+  </artifact>
+</component>
