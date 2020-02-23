@@ -116,7 +116,34 @@ public class BookDAOJDBCImpl implements BookDAO {
 		});
 	}
 	
+	public int bookCount() {
+		return withDB(conn -> {
+			int count = 0;
+			
+			Statement statement = conn.createStatement();
+			final String request = "SELECT * FROM Book";
+			ResultSet result = statement.executeQuery(request);
+			while (result.next()) {
+				count++;
+			}
+			return count;
+		});
+	}
 	
+	public double totalPrice() {
+		return withDB(conn -> {
+			double price = 0;
+			Statement statement = conn.createStatement();
+			final String request = "SELECT * FROM Book";
+			ResultSet result = statement.executeQuery(request);
+			while (result.next()) {
+				price += result.getBigDecimal("price").doubleValue();
+			}
+			return price;
+		});
+	}
+	
+
 	static interface RunJDBC <T>{
 		T run(Connection con) throws Exception;
 	}

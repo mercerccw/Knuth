@@ -15,6 +15,7 @@ public class CommandManager {
 			orders.put("edit", new CommandEdit());
 			orders.put("delete", new CommandDelete());
 			orders.put("save", new CommandSave());
+			orders.put("statistics", new CommandStatistics());
 		}
 
 		public static Command getOrder( String name) {

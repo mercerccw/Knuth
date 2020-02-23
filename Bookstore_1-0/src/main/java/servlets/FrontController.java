@@ -17,7 +17,7 @@ import dao.*;
 /**
  * Servlet implementation class FrontController
  */
-@WebServlet(urlPatterns= {"/listbooks", "/edit", "/delete", "/save"})
+@WebServlet(urlPatterns= {"/listbooks", "/edit", "/delete", "/save","/statistics"})
 public class FrontController extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;

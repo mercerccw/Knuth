@@ -19,4 +19,7 @@ public interface BookDAO {
 	List<Book> listByAuthorAsc();
 	List<Book> listByAuthorDesc();
 	
+	int bookCount();
+	double totalPrice();
+	
 }
