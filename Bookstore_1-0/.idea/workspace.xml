@@ -11,39 +11,62 @@
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/Bookstore_1_0_war.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/Bookstore_1_0_war_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_11_5.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_common_java5_2_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_api_2_19_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_surefire_provider_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Bookstore_1-0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/commands/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/commands/CommandDelete.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/commands/CommandDelete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/commands/CommandEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/commands/CommandEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/commands/CommandList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/commands/CommandList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/commands/CommandSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/commands/CommandSave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/commands/CommandStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/commands/CommandStatistics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$BookstoreException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$BookstoreException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$RunJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl$RunJDBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/dao/BookDAOJDBCImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/dao/JDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/dao/JDBC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/jsondao/BookDAOJsonImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/jsondao/JSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/books.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/BookDAOJsonImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/BookDAOJsonImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/JSON.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/common-java5-2.19.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/junit-platform-engine-1.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/junit-platform-launcher-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/junit-platform-surefire-provider-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/surefire-api-2.19.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/jsondao/BookDAOJsonImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/jsondao/BookDAOJsonImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/jsondao/JSON.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/glassfish-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/bookstore.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/bookstore.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/servlets/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/servlets/FrontController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/BookDAOJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/BookDAOJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/FrontController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/servlets/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/servlets/FrontController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/glassfish-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlets/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlets/FrontController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +90,24 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1YEAIQpDYkFZMbG2pjfOkaTzbVa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -182,7 +215,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -201,12 +234,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582497299823</updated>
-      <workItem from="1582497303736" duration="520000" />
+      <workItem from="1582497303736" duration="4035000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582497357561">
@@ -217,38 +253,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1582497511814" />
-    <state width="958" height="245" key="GridCell.Tab.0.bottom" timestamp="1582499905966">
+    <state width="958" height="258" key="GridCell.Tab.0.bottom" timestamp="1582514790241">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582499905966" />
-    <state width="958" height="245" key="GridCell.Tab.0.center" timestamp="1582499905964">
+    <state width="958" height="258" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582514790241" />
+    <state width="454" height="245" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1582512883768" />
+    <state width="958" height="258" key="GridCell.Tab.0.center" timestamp="1582514790240">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582499905964" />
-    <state width="958" height="245" key="GridCell.Tab.0.left" timestamp="1582499905963">
+    <state width="958" height="258" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582514790240" />
+    <state width="454" height="245" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1582512883767" />
+    <state width="958" height="258" key="GridCell.Tab.0.left" timestamp="1582514790239">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582499905963" />
-    <state width="958" height="245" key="GridCell.Tab.0.right" timestamp="1582499905965">
+    <state width="958" height="258" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582514790239" />
+    <state width="454" height="245" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1582512883767" />
+    <state width="958" height="258" key="GridCell.Tab.0.right" timestamp="1582514790240">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582499905965" />
-    <state width="958" height="245" key="GridCell.Tab.1.bottom" timestamp="1582499905968">
+    <state width="958" height="258" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582514790240" />
+    <state width="454" height="245" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1582512883768" />
+    <state width="958" height="258" key="GridCell.Tab.1.bottom" timestamp="1582514790243">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582499905968" />
-    <state width="958" height="245" key="GridCell.Tab.1.center" timestamp="1582499905967">
+    <state width="958" height="258" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582514790243" />
+    <state width="454" height="245" key="GridCell.Tab.1.bottom/0.23.1440.819@0.23.1440.819" timestamp="1582512883769" />
+    <state width="958" height="258" key="GridCell.Tab.1.center" timestamp="1582514790242">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582499905967" />
-    <state width="958" height="245" key="GridCell.Tab.1.left" timestamp="1582499905967">
+    <state width="958" height="258" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582514790242" />
+    <state width="454" height="245" key="GridCell.Tab.1.center/0.23.1440.819@0.23.1440.819" timestamp="1582512883768" />
+    <state width="958" height="258" key="GridCell.Tab.1.left" timestamp="1582514790241">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582499905967" />
-    <state width="958" height="245" key="GridCell.Tab.1.right" timestamp="1582499905968">
+    <state width="958" height="258" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582514790241" />
+    <state width="454" height="245" key="GridCell.Tab.1.left/0.23.1440.819@0.23.1440.819" timestamp="1582512883768" />
+    <state width="958" height="258" key="GridCell.Tab.1.right" timestamp="1582514790242">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582499905968" />
+    <state width="958" height="258" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582514790242" />
+    <state width="454" height="245" key="GridCell.Tab.1.right/0.23.1440.819@0.23.1440.819" timestamp="1582512883769" />
+    <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1582510228052">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1582510228052" />
     <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582497307361">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

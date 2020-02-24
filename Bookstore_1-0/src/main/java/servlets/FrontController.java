@@ -13,8 +13,9 @@ import commands.*;
 
 import javax.servlet.ServletContext;
 import dao.*;
+import dao.jsondao.JSON;
 
-/**
+ /**
  * Servlet implementation class FrontController
  */
 @WebServlet(urlPatterns= {"/listbooks", "/edit", "/delete", "/save","/statistics"})
@@ -22,7 +23,7 @@ public class FrontController extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
     
-	@Inject @JDBC
+	@Inject @JSON
 	BookDAO dao;
 	
 	/**
@@ -54,11 +55,7 @@ public class FrontController extends HttpServlet {
 			RequestDispatcher rd = sc.getRequestDispatcher("/" + action.getPath());
 			rd.forward( request, response);
 		}
-		
-		
 	}
-
-
 
 	private String getOperation( String requestURI) {
 		int pos = requestURI.lastIndexOf("/");
