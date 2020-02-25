@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import com.oracle.javafx.jmx.json.JSONException;
 import dao.BookDAO;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -20,6 +21,8 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @ApplicationScoped
@@ -37,43 +40,35 @@ public class BookDAOJsonImpl implements BookDAO {
         });
     }
 
-    void writeToFile() {
+    void writeToTargetFile() {
         try {
             ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
-            File path = new File(getDocRoot() + "WEB-INF" + File.separator + "classes" + File.separator + "books.json");
+            File path = new File(getJSONRoot() + "WEB-INF" + File.separator + "classes" + File.separator + "books.json");
             writer.writeValue(path, bookList);
-
-        } catch (IOException e) {
+        } catch (IOException | ParserConfigurationException e) {
             e.printStackTrace();
         }
     }
 
-    private String getDocRoot() {
+    private String getJSONRoot() throws ParserConfigurationException {
         File path = new File(System.getProperty("com.sun.aas.instanceRoot") + "/config/domain.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = null;
-        try {
-            dBuilder = dbFactory.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
+        dBuilder = dbFactory.newDocumentBuilder();
         try {
             assert dBuilder != null;
             Document doc = dBuilder.parse(path);
             doc.getDocumentElement().normalize();
             NodeList appList = doc.getElementsByTagName("application");
             for (int temp = 0; temp < appList.getLength(); temp++) {
-
-                Node nNode = appList.item(temp);
-
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-
-                    Element eElement = (Element) nNode;
+                Node node = appList.item(temp);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) node;
                     if (eElement.getAttribute("name").equals("Bookstore_1-0-0.0.1-SNAPSHOT")) {
-                        String location = eElement.getAttribute("location");
-                        location = location.replace("file:/", "");
-                        location = location.replaceAll("%20", " ");
-                        return location;
+                        String fileLocation = eElement.getAttribute("location");
+                        fileLocation = fileLocation.replace("file:/", "");
+                        fileLocation = fileLocation.replaceAll("%20", " ");
+                        return fileLocation;
                     }
                 }
             }
@@ -101,7 +96,7 @@ public class BookDAOJsonImpl implements BookDAO {
         Book book = new Book(id, title, desc, author, Double.parseDouble(price));
 
         bookList.add(book);
-        writeToFile();
+        writeToTargetFile();
     }
 
     public void modify(int id, String title, String desc, String author, String price) {
@@ -112,7 +107,7 @@ public class BookDAOJsonImpl implements BookDAO {
         int index = bookList.indexOf(oldBook);
 
         bookList.set(index, book);
-        writeToFile();
+        writeToTargetFile();
     }
 
     public void delete(int id) {
@@ -120,7 +115,7 @@ public class BookDAOJsonImpl implements BookDAO {
         Book book = find(id);
 
         bookList.remove(book);
-        writeToFile();
+        writeToTargetFile();
     }
 
     public List<Book> list() {
@@ -128,44 +123,87 @@ public class BookDAOJsonImpl implements BookDAO {
         return bookList;
     }
 
-    public List<Book> listByIdAsc() {
 
-        return list();
+    /*The following are methods that have taken inspiration from the BookDAOJDBCImpl.java file
+    The major difficulty with this is that the webpage doesn't want to change the JSON local file.
+    Furthermore, the pages within this
+     */
+
+    public List<Book> listByIdAsc() {
+        return bookList;
+        /*
+        System.out.println(bookList);
+        bookList.sort((o1, o2) -> {
+            int comparator = 0;
+            try {
+                int keyA = o1.getId();
+                int keyB = o2.getId();
+                comparator = Integer.compare(keyA, keyB);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return comparator;
+        });
+        List<Book> newBookList = new ArrayList<Book>();
+        for (int i = 0; i < bookList.size(); i++) {
+            newBookList.add(bookList.get(i));
+        }
+        return newBookList;
+         */
     }
 
     public List<Book> listByIdDesc() {
+        return bookList;
+        /*
+        System.out.println(bookList);
+        Collections.sort(bookList, (o1, o2) -> {
+            int comparator = 0;
+            try {
+                int keyA = o1.getId();
+                int keyB = o2.getId();
+                comparator = Integer.compare(keyA, keyB);
 
-        return list();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return comparator;
+        });
+        List<Book> newBookList = new ArrayList<Book>();
+        for (int i = bookList.size(); i > 0; i--) {
+            newBookList.add(bookList.get(i));
+        }
+        return newBookList;
+         */
     }
 
     public List<Book> listByTitleAsc() {
-
-        return list();
+        return bookList;
     }
 
     public List<Book> listByTitleDesc() {
 
-        return list();
+        return bookList;
     }
 
     public List<Book> listByPriceAsc() {
 
-        return list();
+        return bookList;
     }
 
     public List<Book> listByPriceDesc() {
 
-        return list();
+        return bookList;
     }
 
     public List<Book> listByAuthorAsc() {
 
-        return list();
+        return bookList;
     }
 
     public List<Book> listByAuthorDesc() {
 
-        return list();
+        return bookList;
     }
 
     public int bookCount() {
@@ -191,5 +229,4 @@ public class BookDAOJsonImpl implements BookDAO {
 
         return total;
     }
-
 }

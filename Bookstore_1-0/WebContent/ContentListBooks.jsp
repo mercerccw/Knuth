@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<a href="${pageContext.request.contextPath}/edit">Add a book:</a>
 <a href="${pageContext.request.contextPath}/statistics">Get Statistics</a>
+<a href="${pageContext.request.contextPath}/edit">Add a book:</a>
 <table class="listing">
 	<tr>
 		<th>Code
