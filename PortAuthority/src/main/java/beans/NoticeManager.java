@@ -1,5 +1,7 @@
 package beans;
 
+import com.google.gson.Gson;
+
 import java.io.Serializable;
 
 import javax.enterprise.context.SessionScoped;
@@ -17,11 +19,14 @@ public class NoticeManager implements Serializable {
 	public void setNotice( NoticeOfArrival notice ) {
 		this.notice = notice;
 	}
-	
+	private String serializeJSON(NoticeOfArrival notice) {
+		Gson gson = new Gson();
+		return gson.toJson(notice);
+	}
 	
 	public NoticeOfArrival getNotice() { return notice ; }
 
 	
-	public void mesg() { System.out.println("NoticeManager: mesg()");}
+	public void mesg() { System.out.println(serializeJSON(notice));}
 
 }
