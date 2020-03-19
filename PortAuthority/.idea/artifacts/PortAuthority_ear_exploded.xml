@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="PortAuthority:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PortAuthority_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="PortAuthority/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
