@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title>Notice of Arrival</title>
+</h:head>
+<h:body>
+<h:graphicImage value="hms-logo.png" style="margin:30px"/>
+<f:view>
+	<h:form>
+	<h:panelGroup id="input" style="width:100%">
+			<p:inputText value="#{noticeMgr.notice.name}" style="width:15%;margin:1%"/>
+			<p:inputText value="0" style="width:15%;margin:1%"/>
+			<p:inputText value="0" style="width:15%;margin:1%"/>
+				<h:panelGroup style="width:8%;margin:1%">
+				<p:commandButton value="SEND" actionListener="#{noticeMgr.mesg}" style="background-color:transparent;"/>
+				<p:commandButton icon="ui-icon-refresh"
+					style="background-color:transparent;border-style:none;"
+					update="input" />
+			</h:panelGroup>
+		</h:panelGroup>
+	</h:form>
+	
+</f:view>
+</h:body>
+</html>

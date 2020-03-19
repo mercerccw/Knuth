@@ -8,10 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="47069955-cd92-426d-9b2b-1e9bc60e47cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/ContentListBooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/ContentListBooks.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/jsondao/BookDAOJsonImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/jsondao/BookDAOJsonImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/ContentListBooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/ContentListBooks.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/bookstore.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/bookstore.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/BookDAOJsonImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/BookDAOJsonImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/BookDAOJsonImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/classes/dao/jsondao/BookDAOJsonImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bookstore_1-0-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/jsondao/BookDAOJsonImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/jsondao/BookDAOJsonImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/jsondao/BookDAOJsonImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/jsondao/BookDAOJsonImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,11 +162,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -180,7 +180,9 @@
       <option name="presentableId" value="Default" />
       <updated>1582497299823</updated>
       <workItem from="1582497303736" duration="4160000" />
-      <workItem from="1582583987383" duration="3556000" />
+      <workItem from="1582583987383" duration="3825000" />
+      <workItem from="1582594963206" duration="44000" />
+      <workItem from="1584508013137" duration="20000" />
     </task>
     <servers />
   </component>
@@ -207,54 +209,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1582594604530" />
-    <state width="958" height="258" key="GridCell.Tab.0.bottom" timestamp="1582594583199">
+    <state width="958" height="258" key="GridCell.Tab.0.bottom" timestamp="1582594665464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582594583199" />
+    <state width="958" height="258" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582594665464" />
     <state width="958" height="258" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1582588761433" />
-    <state width="958" height="258" key="GridCell.Tab.0.center" timestamp="1582594583198">
+    <state width="958" height="258" key="GridCell.Tab.0.center" timestamp="1582594665463">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582594583198" />
+    <state width="958" height="258" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582594665463" />
     <state width="958" height="258" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1582588761423" />
-    <state width="958" height="258" key="GridCell.Tab.0.left" timestamp="1582594583198">
+    <state width="958" height="258" key="GridCell.Tab.0.left" timestamp="1582594665462">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582594583198" />
+    <state width="958" height="258" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582594665462" />
     <state width="958" height="258" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1582588761422" />
-    <state width="958" height="258" key="GridCell.Tab.0.right" timestamp="1582594583199">
+    <state width="958" height="258" key="GridCell.Tab.0.right" timestamp="1582594665463">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582594583199" />
+    <state width="958" height="258" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582594665463" />
     <state width="958" height="258" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1582588761432" />
-    <state width="958" height="258" key="GridCell.Tab.1.bottom" timestamp="1582594583201">
+    <state width="958" height="258" key="GridCell.Tab.1.bottom" timestamp="1582594665465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582594583201" />
+    <state width="958" height="258" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582594665465" />
     <state width="958" height="258" key="GridCell.Tab.1.bottom/0.23.1440.819@0.23.1440.819" timestamp="1582588761236" />
-    <state width="958" height="258" key="GridCell.Tab.1.center" timestamp="1582594583200">
+    <state width="958" height="258" key="GridCell.Tab.1.center" timestamp="1582594665464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582594583200" />
+    <state width="958" height="258" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582594665464" />
     <state width="958" height="258" key="GridCell.Tab.1.center/0.23.1440.819@0.23.1440.819" timestamp="1582588761235" />
-    <state width="958" height="258" key="GridCell.Tab.1.left" timestamp="1582594583200">
+    <state width="958" height="258" key="GridCell.Tab.1.left" timestamp="1582594665464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582594583200" />
+    <state width="958" height="258" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582594665464" />
     <state width="958" height="258" key="GridCell.Tab.1.left/0.23.1440.819@0.23.1440.819" timestamp="1582588761234" />
-    <state width="958" height="258" key="GridCell.Tab.1.right" timestamp="1582594583201">
+    <state width="958" height="258" key="GridCell.Tab.1.right" timestamp="1582594665465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="258" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582594583201" />
+    <state width="958" height="258" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582594665465" />
     <state width="958" height="258" key="GridCell.Tab.1.right/0.23.1440.819@0.23.1440.819" timestamp="1582588761236" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1582510228052">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1582510228052" />
-    <state x="399" y="280" key="com.intellij.ide.util.TipDialog" timestamp="1582584002163">
-      <screen x="0" y="23" width="1440" height="819" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1584508013382">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1582497307361" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1584508013382" />
     <state x="399" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.819@0.23.1440.819" timestamp="1582584002163" />
   </component>
 </project>

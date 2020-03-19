@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15825836760954" configfile="/PortAuthority/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="ErrorPage.xhtml" id="pf15825836853915" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15825836853916" path="/ErrorPage.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="NoticeOfArrival.xhtml" id="pf15825836853917" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15825836853916" path="/NoticeOfArrival.xhtml"/>
+  <links id="pf15825836853916" target="pf15825836853917" source="pf15825836853915" outcome="home"/>
+</pageflow:Pageflow>
