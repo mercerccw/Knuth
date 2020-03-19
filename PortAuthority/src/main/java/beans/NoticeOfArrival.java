@@ -17,6 +17,8 @@ public class NoticeOfArrival implements Serializable {
 	private Long id;
 
 	private String name;
+	private Integer mmsi;
+	private Integer client;
 
 	public NoticeOfArrival() {
 	}
@@ -29,4 +31,19 @@ public class NoticeOfArrival implements Serializable {
 		return name;
 	}
 
+	public Integer getMmsi() {
+		return mmsi;
+	}
+
+	public void setMmsi(Integer mmsi) {
+		this.mmsi = mmsi;
+	}
+
+	public Integer getClient() {
+		return client;
+	}
+
+	public void setClient(Integer client) {
+		this.client = client;
+	}
 }

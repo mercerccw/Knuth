@@ -10,9 +10,12 @@
 <f:view>
 	<h:form>
 	<h:panelGroup id="input" style="width:100%">
+			<p>Name</p>
 			<p:inputText value="#{noticeMgr.notice.name}" style="width:15%;margin:1%"/>
-			<p:inputText value="0" style="width:15%;margin:1%"/>
-			<p:inputText value="0" style="width:15%;margin:1%"/>
+			<p>MMSI</p>
+			<p:inputText value="#{noticeMgr.notice.mmsi}" style="width:15%;margin:1%"/>
+			<p>Client</p>
+			<p:inputText value="#{noticeMgr.notice.client}" style="width:15%;margin:1%"/>
 				<h:panelGroup style="width:8%;margin:1%">
 				<p:commandButton value="SEND" actionListener="#{noticeMgr.mesg}" style="background-color:transparent;"/>
 				<p:commandButton icon="ui-icon-refresh"
