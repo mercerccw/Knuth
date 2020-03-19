@@ -6,10 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e37fe715-2977-4d33-9b44-350a1c00f1ee" name="Default Changelist" comment="Just placing all correct files">
+    <list default="true" id="e37fe715-2977-4d33-9b44-350a1c00f1ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/NoticeOfArrival.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/NoticeOfArrival.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/NoticeOfArrival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/NoticeOfArrival.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/BookstoreJPA" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,77 +66,6 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunManager">
-    <configuration name="GlassFish 5.1.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.1.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="PortAuthority:war exploded">
-          <settings />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="DOMAIN" value="domain1" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-        <option name="CREDENTIAL_ALIAS" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="9009" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="PortAuthority:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <configuration default="true" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.1.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -216,7 +143,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -261,10 +188,10 @@
       <screen x="0" y="23" width="2560" height="999" />
     </state>
     <state x="1519" y="189" key="#Glassfish_Server/0.23.2560.999@0.23.2560.999" timestamp="1584648317922" />
-    <state x="1038" y="169" width="1071" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584652246026">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2006" y="286" width="1071" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584658160297">
+      <screen x="1920" y="156" width="1920" height="1050" />
     </state>
-    <state x="1038" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584652246026" />
+    <state x="2006" y="286" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584658160297" />
     <state x="1384" y="184" width="1071" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.999@0.23.2560.999" timestamp="1584648720545" />
     <state x="553" y="190" width="979" height="622" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1584652160197">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -275,45 +202,49 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="585" y="119" key="CommitChangelistDialog2/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584654444536" />
-    <state width="797" height="270" key="GridCell.Tab.0.bottom" timestamp="1584657715845">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state x="763" y="372" key="FileChooserDialogImpl" timestamp="1584658029699">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state x="763" y="372" key="FileChooserDialogImpl/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584658029699" />
+    <state width="1293" height="210" key="GridCell.Tab.0.bottom" timestamp="1584657814599">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1293" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657814599" />
     <state width="797" height="270" key="GridCell.Tab.0.bottom/0.23.2560.999@0.23.2560.999" timestamp="1584657715845" />
-    <state width="797" height="270" key="GridCell.Tab.0.center" timestamp="1584657715845">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.0.center" timestamp="1584657814599">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.0.center/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.0.center/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657814599" />
     <state width="797" height="270" key="GridCell.Tab.0.center/0.23.2560.999@0.23.2560.999" timestamp="1584657715845" />
-    <state width="797" height="270" key="GridCell.Tab.0.left" timestamp="1584657715845">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.0.left" timestamp="1584657814599">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.0.left/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.0.left/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657814599" />
     <state width="797" height="270" key="GridCell.Tab.0.left/0.23.2560.999@0.23.2560.999" timestamp="1584657715845" />
-    <state width="797" height="270" key="GridCell.Tab.0.right" timestamp="1584657715845">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.0.right" timestamp="1584657814599">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.0.right/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.0.right/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657814599" />
     <state width="797" height="270" key="GridCell.Tab.0.right/0.23.2560.999@0.23.2560.999" timestamp="1584657715845" />
-    <state width="797" height="270" key="GridCell.Tab.1.bottom" timestamp="1584657715846">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.1.bottom" timestamp="1584657788414">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657788414" />
     <state width="797" height="270" key="GridCell.Tab.1.bottom/0.23.2560.999@0.23.2560.999" timestamp="1584657715846" />
-    <state width="797" height="270" key="GridCell.Tab.1.center" timestamp="1584657715846">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.1.center" timestamp="1584657788414">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.1.center/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.1.center/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657788414" />
     <state width="797" height="270" key="GridCell.Tab.1.center/0.23.2560.999@0.23.2560.999" timestamp="1584657715846" />
-    <state width="797" height="270" key="GridCell.Tab.1.left" timestamp="1584657715846">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.1.left" timestamp="1584657788414">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.1.left/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.1.left/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657788414" />
     <state width="797" height="270" key="GridCell.Tab.1.left/0.23.2560.999@0.23.2560.999" timestamp="1584657715846" />
-    <state width="797" height="270" key="GridCell.Tab.1.right" timestamp="1584657715846">
-      <screen x="0" y="23" width="2560" height="999" />
+    <state width="1293" height="210" key="GridCell.Tab.1.right" timestamp="1584657788414">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="210" key="GridCell.Tab.1.right/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584656180861" />
+    <state width="1293" height="210" key="GridCell.Tab.1.right/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1584657788414" />
     <state width="797" height="270" key="GridCell.Tab.1.right/0.23.2560.999@0.23.2560.999" timestamp="1584657715846" />
     <state x="1408" y="103" key="SettingsEditor" timestamp="1584648559010">
       <screen x="0" y="23" width="2560" height="999" />
