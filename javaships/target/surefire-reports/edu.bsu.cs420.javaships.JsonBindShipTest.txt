@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: edu.bsu.cs420.javaships.JsonBindShipTest
--------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 s - in edu.bsu.cs420.javaships.JsonBindShipTest

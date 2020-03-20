@@ -10,6 +10,11 @@ import javax.inject.Named;
 import javax.jms.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
 
 @SessionScoped
 @Named("noticeMgr")
@@ -30,7 +35,7 @@ public class NoticeManager implements Serializable {
 	public void setNotice( NoticeOfArrival notice ) {
 		this.notice = notice;
 	}
-	private String serializeJSON(NoticeOfArrival notice) {
+	private static String serializeJSON(NoticeOfArrival notice) {
 		Gson gson = new Gson();
 		return gson.toJson(notice);
 	}
@@ -45,9 +50,17 @@ public class NoticeManager implements Serializable {
 	}
 	public NoticeOfArrival getNotice() { return notice ; }
 
+	private static void createShip(Client clt, NoticeOfArrival notice ){
+		System.out.println("createShip(" + serializeJSON(notice) + ")");
+		WebTarget resource = clt.target("http://localhost:3000/vessels");
+		String feedback = resource.request(MediaType.APPLICATION_JSON).post( Entity.json(notice.toJsonObject()), String.class);
+	}
 	
 	public void mesg() {
+		System.out.println("Starting shipClient()");
+		Client restClient = ClientBuilder.newClient();
 		String msg = serializeJSON(notice);
+		createShip(restClient, new NoticeOfArrival("Clayton", 4322343,34));
 		sendMessage(msg);
 		System.out.println(msg);
 	}

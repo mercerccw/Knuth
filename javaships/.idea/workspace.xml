@@ -1,13 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a41e41a3-0423-4b7c-9108-609df870f909" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortAuthority/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortAuthority/PortAuthority.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/PortAuthority.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeOfArrival.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeOfArrival.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/ShipsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/ShipsClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/javaships-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-10T18-15-38_176-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.JsonBindShipTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.JsonShipTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.ShipTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.ShipTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.JsonBindShipTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.JsonShipTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.ShipTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.ShipTest.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1ZN7QaYg2wLBxCI34WXUFJkvaE6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Maven.javaships [test]">
+    <configuration name="ShipsClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaships.ShipsClient" />
+      <module name="javaships" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaships.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipsClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs420.javaships.ShipsClient" />
+      <module name="javaships" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.bsu.cs420.javaships.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="javaships [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="javaships [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.javaships [test]" />
+        <item itemvalue="Maven.javaships [clean]" />
+        <item itemvalue="Application.ShipsClient" />
+        <item itemvalue="Application.ShipsClient (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a41e41a3-0423-4b7c-9108-609df870f909" name="Default Changelist" comment="" />
+      <created>1584667682610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584667682610</updated>
+      <workItem from="1584667683822" duration="2051000" />
+      <workItem from="1584669853870" duration="1695000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1389" height="214" key="GridCell.Tab.0.bottom" timestamp="1584669735893">
+      <screen x="1920" y="156" width="1920" height="1050" />
+    </state>
+    <state width="1389" height="214" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1584669735893" />
+    <state width="1389" height="214" key="GridCell.Tab.0.center" timestamp="1584669735893">
+      <screen x="1920" y="156" width="1920" height="1050" />
+    </state>
+    <state width="1389" height="214" key="GridCell.Tab.0.center/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1584669735893" />
+    <state width="1389" height="214" key="GridCell.Tab.0.left" timestamp="1584669735893">
+      <screen x="1920" y="156" width="1920" height="1050" />
+    </state>
+    <state width="1389" height="214" key="GridCell.Tab.0.left/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1584669735893" />
+    <state width="1389" height="214" key="GridCell.Tab.0.right" timestamp="1584669735893">
+      <screen x="1920" y="156" width="1920" height="1050" />
+    </state>
+    <state width="1389" height="214" key="GridCell.Tab.0.right/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1584669735893" />
   </component>
 </project>
