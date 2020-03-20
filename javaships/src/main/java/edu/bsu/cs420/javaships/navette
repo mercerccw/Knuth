@@ -1,0 +1,29 @@
+	/**
+	 * Return a list of Ship objects from a JSON string.
+	 *
+	 * @param String A JSON array string (f.i. '[{"name": "Star", "mmsi": 123456789, "client": 123}, { ... }, ... ]'), or a JSON object string representing a single ship.
+	 * @return a List of Ship objects, or null if the string is invalid.
+	 */
+	public static List<Ship> getShips( String repr ){
+		List<Ship> sl = new ArrayList<Ship>();
+		JsonValue jsonVal = Json.createReader( new StringReader( repr )).read();
+
+		ValueType type = jsonVal.getValueType();
+		if (type==ValueType.OBJECT){
+			Ship s = create( (JsonObject) jsonVal);
+			if (s != null){
+				sl.add( s );
+			}
+		} else if (type==ValueType.ARRAY){
+			JsonArray shipArray = (JsonArray) jsonVal;
+			for( JsonValue shipVal: shipArray){
+				if (shipVal.getValueType()==ValueType.OBJECT){
+					Ship s = create( (JsonObject) shipVal );
+					if (s != null){
+						sl.add( s );
+					}
+				}
+			}
+		}
+		return sl;
+	}
