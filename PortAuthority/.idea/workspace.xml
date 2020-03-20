@@ -6,30 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e37fe715-2977-4d33-9b44-350a1c00f1ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortAuthority.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PortAuthority.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/NoticeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/NoticeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/NoticeOfArrival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/NoticeOfArrival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/classes/edu/bsu/cs420/javaships/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/classes/edu/bsu/cs420/javaships/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/classes/edu/bsu/cs420/javaships/ShipsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/classes/edu/bsu/cs420/javaships/ShipsClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/javaships-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/2020-03-10T18-15-38_176-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/TEST-edu.bsu.cs420.javaships.JsonBindShipTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/TEST-edu.bsu.cs420.javaships.JsonShipTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/TEST-edu.bsu.cs420.javaships.ShipTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/surefire-reports/TEST-edu.bsu.cs420.javaships.ShipTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/edu.bsu.cs420.javaships.JsonBindShipTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/edu.bsu.cs420.javaships.JsonShipTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaships/target/surefire-reports/edu.bsu.cs420.javaships.ShipTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../javaships/target/surefire-reports/edu.bsu.cs420.javaships.ShipTest.txt" afterDir="false" />
-    </list>
+    <list default="true" id="e37fe715-2977-4d33-9b44-350a1c00f1ee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,20 +218,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="MySQL - @localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="MySQL - @localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@d459500" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -274,6 +237,7 @@
       <updated>1584648235134</updated>
       <workItem from="1584648239421" duration="2001000" />
       <workItem from="1584652013898" duration="3898000" />
+      <workItem from="1584672930935" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="Just placing all correct files">
       <created>1584654445017</created>
