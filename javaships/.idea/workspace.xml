@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a41e41a3-0423-4b7c-9108-609df870f909" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PortAuthority/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PortAuthority/PortAuthority.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/PortAuthority.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeOfArrival.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PortAuthority/src/main/java/beans/NoticeOfArrival.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SoftHaven/src/example/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SoftHaven/web/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SoftHaven/web/WEB-INF/faces-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SoftHaven/web/WEB-INF/sun-jaxws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/ShipsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs420/javaships/ShipsClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaships-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-10T18-15-38_176-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.JsonBindShipTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.JsonShipTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.ShipTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.bsu.cs420.javaships.ShipTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.JsonBindShipTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.JsonShipTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.ShipTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.bsu.cs420.javaships.ShipTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +141,9 @@
       <updated>1584667682610</updated>
       <workItem from="1584667683822" duration="2051000" />
       <workItem from="1584669853870" duration="1695000" />
+      <workItem from="1585518187956" duration="3000" />
+      <workItem from="1585518217404" duration="1198000" />
+      <workItem from="1585519440221" duration="2000" />
     </task>
     <servers />
   </component>
@@ -181,5 +167,9 @@
       <screen x="1920" y="156" width="1920" height="1050" />
     </state>
     <state width="1389" height="214" key="GridCell.Tab.0.right/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1584669735893" />
+    <state x="342" y="145" key="new project wizard" timestamp="1585518924647">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="342" y="145" key="new project wizard/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1585518924647" />
   </component>
 </project>
