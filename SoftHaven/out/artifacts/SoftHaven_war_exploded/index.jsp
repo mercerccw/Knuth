@@ -7,10 +7,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>SoftHaven</title>
+</head>
+<body>
+<h1>SoftHaven</h1>
+<nav>
+  <div><a href="ship_master.jsp">Ship Master View</a></div>
+  <div><a href="ship_agent.jsp">Ship Agent View</a></div>
+  <div><a href="customs.jsp">Customs View</a></div>
+</nav>
+</body>
 </html>
