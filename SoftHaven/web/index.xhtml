@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Facelet Title</title>
+</h:head>
+<h:body>
+    <f:view>
+        <h:form id="convForm">
+            <h4>Converter</h4>
+            <h:panelGrid columns="3">
+                <h:outputLabel value = "Enter Base 10 Number "
+                               for = "number"/>
+                <h:inputText id = "number"
+                             value="#{converterController.converter
+                           .number}"
+                             required="true"
+                             binding="#{converterController.numberInput}"/>
+                <h:message for="number"/>
+            </h:panelGrid>
+
+            <div>
+                <h:commandButton
+                        action="#{converterController.toBinary()}"
+                        value="Binary"/>
+                <h:commandButton
+                        action="#{converterController.toHex()}"
+                        value="Hexa"/>
+                <h:commandButton
+                        action="#{converterController.toOct()}"
+                        value="Octal"/>
+                <h:commandButton
+                        action="#{converterController.clear()}"
+                        value="clear" immediate="true"/>
+            </div>
+        </h:form>
+        <h:panelGroup
+                binding="#{converterController.resultPanel}"
+                rendered="false">
+            <h4>Result</h4>
+            <h:panelGrid columns="1">
+                <h:outputText value="Number
+                  #{converterController.converter.number}"/>
+                <h:outputText value="Result
+                  #{converterController.converter.result}"/>
+            </h:panelGrid>
+        </h:panelGroup>
+
+    </f:view>
+</h:body>
+</html>
