@@ -8,9 +8,9 @@ public class UserDAO {
 
     public User checkLogin(String email, String password) throws SQLException,
             ClassNotFoundException {
-        String jdbcURL = "jdbc:mysql://localhost:3306/bookshop";
+        String jdbcURL = "jdbc:mysql://localhost:3306/softhaven?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true";
         String dbUser = "root";
-        String dbPassword = "password";
+        String dbPassword = "root";
 
         Class.forName("com.mysql.jdbc.Driver");
         Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);

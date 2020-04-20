@@ -8,10 +8,10 @@
 </head>
 <body>
 <div style="text-align: center">
-    <h1>Welcome to Bookshop Website Admin Panel</h1>
+    <h1>Welcome to SoftHaven Website Admin Panel</h1>
     <b>${user.first_name} (${user.email})</b>
     <br><br>
-    <a href="/logout">Logout</a>
+    <a href="${pageContext.request.contextPath}/logout">Logout</a>
 </div>
 </body>
 </html>
