@@ -13,5 +13,6 @@
 <body>
 <h1>SoftHaven</h1>
 <div><a href="login.jsp">login</a></div>
+<div><a href="register.jsp">register</a></div>
 </body>
 </html>

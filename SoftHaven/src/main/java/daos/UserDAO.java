@@ -1,19 +1,18 @@
 package daos;
 
+import config.Database;
 import models.User;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UserDAO {
 
     public User checkLogin(String email, String password) throws SQLException,
             ClassNotFoundException {
-        String jdbcURL = "jdbc:mysql://localhost:3306/softhaven?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true";
-        String dbUser = "root";
-        String dbPassword = "root";
-
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
+        Connection connection = Database.dbconnect();
         String sql = "SELECT * FROM users WHERE email = ? and password = ?";
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1, email);
@@ -22,7 +21,6 @@ public class UserDAO {
         ResultSet result = statement.executeQuery();
 
         User user = null;
-
         if (result.next()) {
             user = new User();
             user.setFirst_name(result.getString("first_name"));
@@ -30,9 +28,11 @@ public class UserDAO {
             user.setPosition(result.getString("position"));
             user.setEmail(email);
         }
-
         connection.close();
-
         return user;
     }
+//    public User register(String first_name, String last_name, String email, String password, String position)
+//            throws SQLException, ClassNotFoundException {
+//
+//    }
 }

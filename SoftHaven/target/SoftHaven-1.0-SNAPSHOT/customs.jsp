@@ -5,5 +5,6 @@
 </head>
 <body>
 <h1>Customs</h1>
+<a href="${pageContext.request.contextPath}/logout">Logout</a>
 </body>
 </html>

@@ -24,6 +24,7 @@
         <br><br>
         <button type="submit">Login</button>
     </form>
+    <a href="register.jsp">Register</a>
 </div>
 </body>
 </html>
