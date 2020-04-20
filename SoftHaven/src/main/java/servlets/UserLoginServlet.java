@@ -1,5 +1,6 @@
 package servlets;
 
+import com.google.common.hash.Hashing;
 import daos.UserDAO;
 import models.User;
 
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 @WebServlet("/login")
 public class UserLoginServlet extends HttpServlet {
@@ -24,11 +26,12 @@ public class UserLoginServlet extends HttpServlet {
             throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String hashed_password = Hashing.sha256().hashString(password, StandardCharsets.UTF_8).toString();
 
         UserDAO userDao = new UserDAO();
 
         try {
-            User user = userDao.checkLogin(email, password);
+            User user = userDao.checkLogin(email, hashed_password);
             String destPage = "login.jsp";
 
             if (user != null) {

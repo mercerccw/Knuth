@@ -1,4 +1,6 @@
-models\User.class
 daos\UserDAO.class
-servlets\UserLoginServlet.class
+servlets\RegisterServlet.class
 servlets\UserLogoutServlet.class
+models\User.class
+config\Database.class
+servlets\UserLoginServlet.class
