@@ -12,10 +12,6 @@
 </head>
 <body>
 <h1>SoftHaven</h1>
-<nav>
-  <div><a href="ship_master.jsp">Ship Master View</a></div>
-  <div><a href="ship_agent.jsp">Ship Agent View</a></div>
-  <div><a href="customs.jsp">Customs View</a></div>
-</nav>
+<div><a href="login.jsp">login</a></div>
 </body>
 </html>
