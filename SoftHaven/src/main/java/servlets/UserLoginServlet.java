@@ -53,6 +53,7 @@ public class UserLoginServlet extends HttpServlet {
             } else {
                 String message = "Invalid email/password";
                 request.setAttribute("message", message);
+                response.sendRedirect(request.getContextPath() + "/" + destPage);
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);

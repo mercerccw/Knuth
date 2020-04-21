@@ -32,10 +32,10 @@
         </select>
         <br><br>
         <label for="password">Password:</label>
-        <input name="password" id="password" required/>
+        <input name="password" id="password" required type="password"/>
         <br><br>
         <label for="confirm_password">Confirm Password:</label>
-        <input name="confirm_password" id="confirm_password" required/>
+        <input name="confirm_password" id="confirm_password" required type="password"/>
         <br><br>
         <button type="submit">Register</button>
     </form>
