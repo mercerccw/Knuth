@@ -39,13 +39,13 @@ public class UserLoginServlet extends HttpServlet {
                 session.setAttribute("user", user);
                 switch (user.getPosition()) {
                     case "agent":
-                        destPage = "ship_agent.jsp";
+                        destPage = "agent.jsp";
                         break;
                     case "customs":
                         destPage = "customs.jsp";
                         break;
                     case "master":
-                        destPage = "ship_master.jsp";
+                        destPage = "master.jsp";
                         break;
                     default:
                         destPage = "home.jsp";
@@ -56,9 +56,10 @@ public class UserLoginServlet extends HttpServlet {
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-            dispatcher.forward(request, response);
+            response.sendRedirect(request.getContextPath() + "/" + destPage);
+//            dispatcher.forward(request, response);
+
             assert user != null;
-            System.out.println("here: " + user.toString());
         } catch (Exception ex) {
             throw new ServletException(ex);
         }

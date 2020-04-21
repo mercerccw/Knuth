@@ -7,6 +7,21 @@ import java.sql.*;
 
 public class UserDAO {
 
+    public User checkPosition(String email) throws SQLException, ClassNotFoundException {
+        Connection connection = Database.dbconnect();
+        String sql = "SELECT position FROM users WHERE email = ?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setString(1, email);
+        ResultSet result = statement.executeQuery();
+        User user = null;
+        if (result.next()) {
+            user = new User();
+            user.setPosition(result.getString("position"));
+            user.setEmail(email);
+        }
+        connection.close();
+        return user;
+    }
     public User checkLogin(String email, String password) throws SQLException,
             ClassNotFoundException {
         Connection connection = Database.dbconnect();

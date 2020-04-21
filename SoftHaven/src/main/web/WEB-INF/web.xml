@@ -6,7 +6,7 @@
     <jsp-config>
         <jsp-property-group>
             <url-pattern>*.jsp</url-pattern>
-            <scripting-invalid>true</scripting-invalid>
+            <scripting-invalid>false</scripting-invalid>
         </jsp-property-group>
     </jsp-config>
 </web-app>

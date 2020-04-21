@@ -39,6 +39,7 @@
         <br><br>
         <button type="submit">Register</button>
     </form>
+    ${message}
 </div>
 </body>
 </html>

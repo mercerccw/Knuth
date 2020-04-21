@@ -11,8 +11,11 @@
     <title>SoftHaven</title>
 </head>
 <body>
-<h1>SoftHaven</h1>
-<div><a href="login.jsp">login</a></div>
-<div><a href="register.jsp">register</a></div>
+<div style="text-align: center">
+    <h1>SoftHaven</h1>
+    <div><a href="login.jsp">login</a></div>
+    <div><a href="register.jsp">register</a></div>
+</div>
+
 </body>
 </html>

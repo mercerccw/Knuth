@@ -1,22 +1,22 @@
-<%@ page import="models.User" %><%--
-  Created by IntelliJ IDEA.
-  User: Clayton
-  Date: 4/18/2020
-  Time: 12:38 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="daos.UserDAO" %>
+<%@ page import="models.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Ship Master</title>
 </head>
-<body>
 <%
     User user = (User) session.getAttribute("user");
-    if(!user.getPosition().equals("master")){
+    UserDAO userDao = new UserDAO();
+    User revised_user = userDao.checkPosition(user.getEmail());
+    user.setPosition(revised_user.getPosition());
+    session.setAttribute("user", user);
+    if (!user.getPosition().equals("master")) {
         response.sendRedirect(request.getContextPath() + "/" + user.getPosition() + ".jsp");
     }
 %>
+<body>
+
 <div style="text-align: center">
     <h1>Ship Master</h1>
     <p>${user.position}</p>

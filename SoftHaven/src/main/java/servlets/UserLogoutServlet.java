@@ -24,7 +24,8 @@ public class UserLogoutServlet extends HttpServlet {
             session.removeAttribute("user");
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-            dispatcher.forward(request, response);
+            response.sendRedirect(request.getContextPath() + "/");
+//            dispatcher.forward(request, response);
         }
     }
 }
