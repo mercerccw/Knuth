@@ -2,8 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Map, Marker, Popup, TileLayer} from "react-leaflet";
-import {Icon} from "leaflet";
+import { Icon } from "leaflet";
 
+const vessel = new Icon({
+    iconUrl: "../assets/vessel.png",
+    iconRetinaUrl: "../assets/vessel.png",
+    iconSize: [25, 25]
+});
+
+const anchor = new Icon({
+    iconUrl: "/anchor.png",
+    iconRetinaUrl: "/anchor.png",
+    iconSize: [25, 25],
+});
 
 function App() {
   return (
@@ -13,9 +24,9 @@ function App() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker
-            position={[55.626233, 13.016933]}
-        />
+          <Marker position={[55.626233, 13.016933]} icon={anchor}>
+              <Popup>Vessel information here.</Popup>
+          </Marker>
       </Map>
     </div>
   );
