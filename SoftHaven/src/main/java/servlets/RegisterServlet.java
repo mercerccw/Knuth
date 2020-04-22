@@ -56,8 +56,9 @@ public class RegisterServlet extends HttpServlet {
                     default:
                         destPage = "register.jsp";
                 }
-                RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-                dispatcher.forward(request, response);
+//                RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
+                response.sendRedirect(request.getContextPath() + "/" + destPage);
+//                dispatcher.forward(request, response);
             } else {
                 String message = "Passwords don't match";
                 request.setAttribute("message", message);
