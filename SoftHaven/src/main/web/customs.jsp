@@ -7,18 +7,9 @@
 </head>
 
 <body>
-<%
-    User user = (User) session.getAttribute("user");
-    UserDAO userDao = new UserDAO();
-    User revised_user = userDao.checkPosition(user.getEmail());
-    user.setPosition(revised_user.getPosition());
-    session.setAttribute("user", user);
-    if (!user.getPosition().equals("customs")) {
-        response.sendRedirect(request.getContextPath() + "/" + user.getPosition() + ".jsp");
-    }
-%>
 <div style="text-align: center">
     <h1>Customs</h1>
+    <p>${user.position}</p>
     <a href="${pageContext.request.contextPath}/logout">Logout</a>
 </div>
 </body>

@@ -11,7 +11,7 @@
     <title>Register</title>
 </head>
 <body>
-<a href="index.jsp">Home</a>
+<a href="${pageContext.request.contextPath}/">Home</a>
 <div style="text-align: center">
     <h1>Register</h1>
     <form action="register" method="post">

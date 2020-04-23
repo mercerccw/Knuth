@@ -13,8 +13,8 @@
 <body>
 <div style="text-align: center">
     <h1>SoftHaven</h1>
-    <div><a href="login.jsp">login</a></div>
-    <div><a href="register.jsp">register</a></div>
+    <div><a href="${pageContext.request.contextPath}/login">login</a></div>
+    <div><a href="${pageContext.request.contextPath}/register">register</a></div>
 </div>
 
 </body>

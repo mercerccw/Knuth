@@ -1,6 +1,5 @@
 package servlets;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,10 +21,7 @@ public class UserLogoutServlet extends HttpServlet {
         HttpSession session = request.getSession(false);
         if (session != null) {
             session.removeAttribute("user");
-
-            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
             response.sendRedirect(request.getContextPath() + "/");
-//            dispatcher.forward(request, response);
         }
     }
 }

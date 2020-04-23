@@ -5,16 +5,6 @@
 <head>
     <title>Ship Master</title>
 </head>
-<%
-    User user = (User) session.getAttribute("user");
-    UserDAO userDao = new UserDAO();
-    User revised_user = userDao.checkPosition(user.getEmail());
-    user.setPosition(revised_user.getPosition());
-    session.setAttribute("user", user);
-    if (!user.getPosition().equals("master")) {
-        response.sendRedirect(request.getContextPath() + "/" + user.getPosition() + ".jsp");
-    }
-%>
 <body>
 
 <div style="text-align: center">

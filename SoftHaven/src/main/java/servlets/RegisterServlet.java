@@ -4,7 +4,6 @@ import com.google.common.hash.Hashing;
 import daos.UserDAO;
 import models.User;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,40 +33,42 @@ public class RegisterServlet extends HttpServlet {
         UserDAO userDao = new UserDAO();
 
         try {
-            String destPage = "register.jsp";
+            String destPage = "/register";
             if (password.equals(confirm_password)) {
-
                 User user = userDao.register(first_name, last_name, email, hashed_password, position);
                 if (user == null) {
-                    throw new Exception("401: There is already a user for that email!");
+                    String message = "There is already a user associated with that account";
+                    request.setAttribute("message", message);
+                    request.getRequestDispatcher("register.jsp").forward(request, response);
+                } else {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("user", user);
+                    switch (user.getPosition()) {
+                        case "agent":
+                            destPage = "/agent";
+                            break;
+                        case "customs":
+                            destPage = "/customs";
+                            break;
+                        case "master":
+                            destPage = "/master";
+                            break;
+                        default:
+                            destPage = "/register";
+                    }
+                    response.sendRedirect(request.getContextPath() + destPage);
                 }
-                HttpSession session = request.getSession();
-                session.setAttribute("user", user);
-                switch (user.getPosition()) {
-                    case "agent":
-                        destPage = "agent.jsp";
-                        break;
-                    case "customs":
-                        destPage = "customs.jsp";
-                        break;
-                    case "master":
-                        destPage = "master.jsp";
-                        break;
-                    default:
-                        destPage = "register.jsp";
-                }
-//                RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-                response.sendRedirect(request.getContextPath() + "/" + destPage);
-//                dispatcher.forward(request, response);
             } else {
                 String message = "Passwords don't match";
                 request.setAttribute("message", message);
-                RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-                response.sendRedirect(request.getContextPath() + "/" + destPage);
-//                dispatcher.forward(request, response);
+                request.getRequestDispatcher("register.jsp").forward(request, response);
             }
         } catch (Exception ex) {
             throw new ServletException(ex);
         }
+    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("register.jsp").forward(request,response);
     }
 }

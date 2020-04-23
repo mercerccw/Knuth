@@ -4,7 +4,6 @@ import com.google.common.hash.Hashing;
 import daos.UserDAO;
 import models.User;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,32 +38,30 @@ public class UserLoginServlet extends HttpServlet {
                 session.setAttribute("user", user);
                 switch (user.getPosition()) {
                     case "agent":
-                        destPage = "agent.jsp";
+                        destPage = "/agent";
                         break;
                     case "customs":
-                        destPage = "customs.jsp";
+                        destPage = "/customs";
                         break;
                     case "master":
-                        destPage = "master.jsp";
+                        destPage = "/master";
                         break;
                     default:
-                        destPage = "home.jsp";
+                        destPage = "/home";
                 }
             } else {
                 String message = "Invalid email/password";
                 request.setAttribute("message", message);
-                RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-                dispatcher.forward(request, response);
-
+                request.getRequestDispatcher(destPage).forward(request, response);
             }
-
-            RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-            response.sendRedirect(request.getContextPath() + "/" + destPage);
-//            dispatcher.forward(request, response);
-
+            response.sendRedirect(request.getContextPath() + destPage);
             assert user != null;
         } catch (Exception ex) {
             throw new ServletException(ex);
         }
+    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("login.jsp").forward(request,response);
     }
 }

@@ -24,7 +24,7 @@
         <br><br>
         <button type="submit">Login</button>
     </form>
-    <a href="register.jsp">Register</a>
+    <a href="${pageContext.request.contextPath}/register">Register</a>
 </div>
 </body>
 </html>
