@@ -56,6 +56,9 @@ public class AgentServlet extends HttpServlet {
                     berthList.add(berth);
                 }
                 request.setAttribute("berthList", berthList);
+//                berthList.forEach((berth_data) -> {
+//                    System.out.println("Here: " + berth_data.getNumber());
+//                });
                 request.getRequestDispatcher("agent.jsp").forward(request, response);
             } catch (Exception e) {
                 e.printStackTrace();

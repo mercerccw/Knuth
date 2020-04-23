@@ -43,6 +43,7 @@
     <orderEntry type="library" name="JAX-RS-2.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1" level="application_server_libraries" />
     <orderEntry type="library" name="Maven: javax:javaee-web-api:8.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
   </component>
