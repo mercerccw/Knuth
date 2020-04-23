@@ -33,5 +33,4 @@ function filter() {
             tr[i].style.display = "none";
         }
     }
-
 }
