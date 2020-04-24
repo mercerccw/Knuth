@@ -1,6 +1,6 @@
-package servlets;
+package com.softhaven.servlet;
 
-import daos.BerthBookingDAO;
+import com.softhaven.dao.BerthBookingDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

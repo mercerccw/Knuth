@@ -1,5 +1,5 @@
-<%@ page import="daos.UserDAO" %>
-<%@ page import="models.User" %>
+<%@ page import="com.softhaven.dao.UserDAO" %>
+<%@ page import="com.softhaven.bean.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>

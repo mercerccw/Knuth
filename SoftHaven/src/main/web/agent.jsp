@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="scripts/tableFunctions.js"></script>
+<script src="scripts/berthFilter.js"></script>
 <html>
 <head>
     <title>Ship Agent</title>
@@ -14,7 +14,11 @@
         <a href="${pageContext.request.contextPath}/">Home</a>
         <h1>Ship Agent Dashboard</h1>
         <h3>${user.last_name}, ${user.first_name}</h3>
-        <a href="${pageContext.request.contextPath}/logout">Logout</a>
+        <div>
+            <a href="${pageContext.request.contextPath}/logout">Logout</a>
+            <br><br>
+            <a href="${pageContext.request.contextPath}/vessels?vesselsPerPage=50&currentPage=1">Vessel List</a>
+        </div>
     </div>
 
     <br><br><br>

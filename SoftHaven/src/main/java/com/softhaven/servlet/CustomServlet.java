@@ -1,7 +1,7 @@
-package servlets;
+package com.softhaven.servlet;
 
-import daos.UserDAO;
-import models.User;
+import com.softhaven.dao.UserDAO;
+import com.softhaven.bean.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/master")
-public class MasterServlet extends HttpServlet {
+@WebServlet("/customs")
+public class CustomServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    public MasterServlet() {
+    public CustomServlet() {
         super();
     }
 
@@ -27,16 +27,16 @@ public class MasterServlet extends HttpServlet {
         User revised_user = null;
         try {
             revised_user = userDao.checkPosition(user.getEmail());
+            assert revised_user != null;
+            user.setPosition(revised_user.getPosition());
+            session.setAttribute("user", user);
+            if (!user.getPosition().equals("customs")) {
+                response.sendRedirect(request.getContextPath() + "/" + user.getPosition());
+            } else {
+                request.getRequestDispatcher("customs.jsp").forward(request, response);
+            }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        assert revised_user != null;
-        user.setPosition(revised_user.getPosition());
-        session.setAttribute("user", user);
-        if(!user.getPosition().equals("master")){
-            response.sendRedirect(request.getContextPath() + "/" + user.getPosition());
-        } else {
-            request.getRequestDispatcher("master.jsp").forward(request,response);
         }
 
     }

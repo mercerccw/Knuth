@@ -1,8 +1,8 @@
-package servlets;
+package com.softhaven.servlet;
 
 import com.google.common.hash.Hashing;
-import daos.UserDAO;
-import models.User;
+import com.softhaven.dao.UserDAO;
+import com.softhaven.bean.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -62,6 +62,23 @@ public class UserLoginServlet extends HttpServlet {
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("login.jsp").forward(request,response);
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("user");
+        UserDAO userDao = new UserDAO();
+        User revised_user = null;
+        if (user == null){
+            request.getRequestDispatcher("login.jsp").forward(request,response);
+        }else {
+            try {
+                revised_user = userDao.checkPosition(user.getEmail());
+                assert revised_user != null;
+                user.setPosition(revised_user.getPosition());
+                session.setAttribute("user", user);
+                response.sendRedirect(request.getContextPath() + "/" + user.getPosition());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }

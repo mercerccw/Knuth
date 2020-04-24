@@ -1,6 +1,6 @@
-package daos;
+package com.softhaven.dao;
 
-import config.Database;
+import com.softhaven.config.Database;
 
 import java.sql.*;
 

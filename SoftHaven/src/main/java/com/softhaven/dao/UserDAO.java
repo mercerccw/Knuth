@@ -1,7 +1,7 @@
-package daos;
+package com.softhaven.dao;
 
-import config.Database;
-import models.User;
+import com.softhaven.config.Database;
+import com.softhaven.bean.User;
 
 import java.sql.*;
 

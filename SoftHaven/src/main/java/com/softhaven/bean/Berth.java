@@ -1,4 +1,4 @@
-package models;
+package com.softhaven.bean;
 
 public class Berth {
     public String port;

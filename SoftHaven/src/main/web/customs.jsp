@@ -1,5 +1,5 @@
-<%@ page import="models.User" %>
-<%@ page import="daos.UserDAO" %>
+<%@ page import="com.softhaven.bean.User" %>
+<%@ page import="com.softhaven.dao.UserDAO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,6 +12,8 @@
     <h1>Customs</h1>
     <p>${user.position}</p>
     <a href="${pageContext.request.contextPath}/logout">Logout</a>
+    <br><br>
+    <a href="${pageContext.request.contextPath}/vessels">Vessel List</a>
 </div>
 </body>
 </html>

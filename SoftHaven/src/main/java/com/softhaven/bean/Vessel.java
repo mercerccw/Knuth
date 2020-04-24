@@ -1,17 +1,26 @@
-package models;
+package com.softhaven.bean;
 
 public class Vessel {
     public int imo;
     public String flag;
     public String name;
     public int built;
-    public String callSign;
+    public String call_sign;
     public int length;
     public int breadth;
     public int tonnage;
     public int mmsi;
     public String type;
     public int ownerCode;
+    public String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public int getImo() {
         return imo;
@@ -46,11 +55,11 @@ public class Vessel {
     }
 
     public String getCallSign() {
-        return callSign;
+        return call_sign;
     }
 
     public void setCallSign(String callSign) {
-        this.callSign = callSign;
+        this.call_sign = callSign;
     }
 
     public int getLength() {

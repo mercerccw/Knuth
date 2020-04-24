@@ -9,5 +9,12 @@
             <scripting-invalid>false</scripting-invalid>
         </jsp-property-group>
     </jsp-config>
-
+<!--    <servlet>-->
+<!--        <servlet-name>VesselServlet</servlet-name>-->
+<!--        <servlet-class>com.softhaven.servlet.VesselServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>VesselServlet</servlet-name>-->
+<!--        <url-pattern>/</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>

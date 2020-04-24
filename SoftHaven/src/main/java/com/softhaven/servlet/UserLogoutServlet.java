@@ -1,4 +1,4 @@
-package servlets;
+package com.softhaven.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
