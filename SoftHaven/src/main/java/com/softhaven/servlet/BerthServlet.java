@@ -26,13 +26,22 @@ public class BerthServlet extends HttpServlet {
         try {
             String message;
             int ship_imo = berthBookingDAO.verifyVessel(request.getParameter("shipImo"));
+            int imo;
+            if(request.getParameter("vessel_imo") == null){
+                imo = 0;
+            }else {
+                imo = Integer.parseInt(request.getParameter("vessel_imo"));
+            }
+
             if (request.getParameter("shipImo").equals("0")) {
                 System.out.println("Here: " + request.getParameter("shipImo"));
-                System.out.println(berthBookingDAO.bookBerth(request.getParameter("berthNumber"), Integer.parseInt(request.getParameter("shipImo"))));
+
+                System.out.println("Here2: " + imo);
+                System.out.println(berthBookingDAO.bookBerth(request.getParameter("berthNumber"), Integer.parseInt(request.getParameter("shipImo")), imo));
                 response.sendRedirect(request.getContextPath() + "/agent");
             } else if (ship_imo != 0) {
                 System.out.println("Here: " + ship_imo);
-                System.out.println(berthBookingDAO.bookBerth(request.getParameter("berthNumber"), Integer.parseInt(request.getParameter("shipImo"))));
+                System.out.println(berthBookingDAO.bookBerth(request.getParameter("berthNumber"), Integer.parseInt(request.getParameter("shipImo")), imo));
                 response.sendRedirect(request.getContextPath() + "/agent");
             } else {
                 message = "There are no ships with IMO: " + request.getParameter("shipImo");

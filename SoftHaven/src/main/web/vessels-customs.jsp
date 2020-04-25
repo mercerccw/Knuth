@@ -48,50 +48,36 @@
         <p>${message}</p>
     </c:if>
     <c:if test="${vessel.imo != null}">
-        <form action="vessels/updateVessel" method="post">
-            <table class="table" id="vessel">
-                <tr>
-                    <th scope="col">IMO</th>
-                    <th scope="col">Flag</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Built Year</th>
-                    <th scope="col">Call Sign</th>
-                    <th scope="col">Length</th>
-                    <th scope="col">Breadth</th>
-                    <th scope="col">Tonnage</th>
-                    <th scope="col">MMSI</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Owner Code</th>
-                    <th scope="col">Status</th>
-                </tr>
-                <tr>
-                    <td>${vessel.imo}</td>
-                    <input type="hidden" style="display: none" value="${vessel.imo}" name="imo">
-                    <td>${vessel.flag}</td>
-                    <td>${vessel.name}</td>
-                    <td>${vessel.built}</td>
-                    <td>${vessel.callSign}</td>
-                    <td>${vessel.length}</td>
-                    <td>${vessel.breadth}</td>
-                    <td>${vessel.tonnage}</td>
-                    <td>${vessel.mmsi}</td>
-                    <td>${vessel.type}</td>
-                    <td>${vessel.ownerCode}</td>
-                    <td>
-                        <label>
-                                ${vessel.status}
-                            <select name="status" id="status">
-                                <option selected disabled hidden value="berth"></option>
-                                <option value="expected">expected</option>
-                                <option value="waiting">waiting</option>
-                                <option value="departed">departed</option>
-                            </select>
-                        </label>
-                    </td>
-                </tr>
-            </table>
-            <input type="submit" value="submit">
-        </form>
+        <table class="table" id="vessel">
+            <tr>
+                <th scope="col">IMO</th>
+                <th scope="col">Flag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Built Year</th>
+                <th scope="col">Call Sign</th>
+                <th scope="col">Length</th>
+                <th scope="col">Breadth</th>
+                <th scope="col">Tonnage</th>
+                <th scope="col">MMSI</th>
+                <th scope="col">Type</th>
+                <th scope="col">Owner Code</th>
+                <th scope="col">Status</th>
+            </tr>
+            <tr>
+                <td>${vessel.imo}</td>
+                <td>${vessel.flag}</td>
+                <td>${vessel.name}</td>
+                <td>${vessel.built}</td>
+                <td>${vessel.callSign}</td>
+                <td>${vessel.length}</td>
+                <td>${vessel.breadth}</td>
+                <td>${vessel.tonnage}</td>
+                <td>${vessel.mmsi}</td>
+                <td>${vessel.type}</td>
+                <td>${vessel.ownerCode}</td>
+                <td>${vessel.status}</td>
+            </tr>
+        </table>
 
     </c:if>
     <br><br>

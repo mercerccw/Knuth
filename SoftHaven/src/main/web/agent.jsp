@@ -52,10 +52,11 @@
                                 <form action="${pageContext.request.contextPath}/berths/addVessels" method="post">
                                     <label>
                                             ${berth.ship_imo}
-                                        <input type="text" value="${berth.number}" name="berthNumber" style="display: none"/>
+                                        <input type="text" value="${berth.number}" name="berthNumber" hidden style="display: none;"/>
+                                        <input type="text" value="${berth.ship_imo}" name="vessel_imo" hidden style="display: none;"/>
                                         <input type="text" name="shipImo" placeholder="Change Vessel IMO..."/>
                                     </label>
-                                    <input class="button" type="submit" name="submit" value="submit"/>
+                                    <input class="button" type="submit" value="submit"/>
 
                                 </form>
 

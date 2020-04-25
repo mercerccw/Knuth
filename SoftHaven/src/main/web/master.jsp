@@ -10,7 +10,7 @@
 <div style="text-align: center">
     <a href="${pageContext.request.contextPath}/">Home</a>
     <h1>Ship Master</h1>
-    <p>${user.position}</p>
+    <h4>Your job title: ${user.position}</h4>
     <a href="${pageContext.request.contextPath}/logout">Logout</a>
 </div>
 </body>
