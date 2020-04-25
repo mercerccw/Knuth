@@ -1,9 +1,11 @@
 package com.softhaven.dao;
 
-import com.softhaven.config.Database;
 import com.softhaven.bean.User;
+import com.softhaven.config.Database;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
 
@@ -22,6 +24,7 @@ public class UserDAO {
         connection.close();
         return user;
     }
+
     public User checkLogin(String email, String password) throws SQLException,
             ClassNotFoundException {
         Connection connection = Database.dbconnect();
@@ -43,6 +46,7 @@ public class UserDAO {
         connection.close();
         return user;
     }
+
     public User register(String first_name, String last_name, String email, String password, String position)
             throws SQLException, ClassNotFoundException {
         Connection connection = Database.dbconnect();
@@ -50,7 +54,7 @@ public class UserDAO {
         PreparedStatement test_statement = connection.prepareStatement(test_sql);
         test_statement.setString(1, email);
         ResultSet test_result = test_statement.executeQuery();
-        if(!test_result.next()){
+        if (!test_result.next()) {
             String sql = "INSERT INTO users (first_name, last_name, email, password, position) VALUES (?,?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             statement.setString(1, first_name);
@@ -76,5 +80,18 @@ public class UserDAO {
         } else {
             return null;
         }
+    }
+
+    public List<String> getAllEmails() throws SQLException, ClassNotFoundException {
+        Connection connection = Database.dbconnect();
+        String sql = "SELECT email from users where position = 'agent' ORDER BY email ASC";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        ResultSet resultSet = statement.executeQuery();
+        List<String> emails = new ArrayList<>();
+        while (resultSet.next()) {
+            assert false;
+            emails.add(resultSet.getString("email"));
+        }
+        return emails;
     }
 }
