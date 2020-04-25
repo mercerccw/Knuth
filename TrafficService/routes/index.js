@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb');
+const dateFNS = require('date-fns')
 // Get a Mongo client to work with the Mongo server
 var MClient = mongodb.MongoClient;
 // Define where the MongoDB database is
@@ -34,6 +35,62 @@ router.get('/', function(req, res){
   });
 });
 
+//Get function to grab most recent AIS messages within the last 30 seconds (one per vessel)
+router.get('/recentAIS/:timestamp', function (request, response) {
+  let timeStamp = request.params.timestamp;
+  let formatedTimeStamp = new Date(timeStamp);
+  MClient.connect(url, {useUnifiedTopology: true}, async (error, db) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Connection established to ", url);
+      let database = db.db('TrafficManager');
+      let aisCollection = database.collection('aisMessage');
+      await aisCollection.find({}).toArray(function (error, result) {
+        if (error) {
+          response.send(err);
+        } else if (result.length) {
+          let filteredResult = [];
+          for (let i = 0; i < result.length; i++) {
+            let messageTimeStamp = new Date(result[i]['Timestamp']);
+            let timeFrame = dateFNS.subSeconds(formatedTimeStamp, 30);
+            //Logic to determine if ais message was within the 30 second time frame from the inputted parameter
+            if (dateFNS.compareAsc(messageTimeStamp, timeFrame) === 1 && dateFNS.compareAsc(formatedTimeStamp, messageTimeStamp) === 1) {
+              filteredResult.push(result[i]);
+            }
+          }
+          response.send(filteredResult);
+        } else {
+          response.send('No documents found');
+        }
+        //Close connection
+        db.close();
+      })
+    }
+  });
+});
+
+//Clear all mongo collections, used to clear database before running ais_transmitter
+router.delete('/deleteAll', function (request, response) {
+  MClient.connect(url, {useUnifiedTopology: true}, async (error, db) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Connection established to ", url);
+      let database = db.db("TrafficManager");
+      //Delete documents from collection 'aisMessage'
+      let aisCollection = database.collection('aisMessage');
+      await aisCollection.deleteMany({});
+      //Delete documents from collection 'arrival/departure'
+      let arrivalDepartureCollection = database.collection('arrival/departure');
+      await arrivalDepartureCollection.deleteMany({});
+      response.send("All documents deleted from all collections");
+      db.close();
+    }
+  });
+});
+
+
 //Get all vessel AIS messages from MMSI identification
 router.get('/MMSI/:mmsi', function (request, response) {
   const mmsiInput = parseInt(request.params.mmsi);
@@ -66,15 +123,12 @@ router.post('/TrafficService/:timestamp', function (request, response) {
   for (let i = 0; i < aisMessages.length; i++) {
     //Filter out all non Class-A vessels
     if (aisMessages[i].Class === "Class A") {
-      //Format out $ to prevent Mongo from thinking the data is an attack
-      if (aisMessages[i].hasOwnProperty("Timestamp")) {
-        aisMessages[i].Timestamp['date'] = aisMessages[i].Timestamp['$date'];
-        delete aisMessages[i].Timestamp['$date'];
-        aisMessages[i].Timestamp.date['numberLong'] = aisMessages[i].Timestamp.date['$numberLong'];
-        delete aisMessages[i].Timestamp.date['$numberLong'];
-      }
       filteredMessages.push(aisMessages[i]);
     }
+  }
+  if (filteredMessages.length === 0) {
+    response.send("No messages to insert.");
+    return;
   }
   MClient.connect(url, {useUnifiedTopology: true}, async (error, db) => {
     if (error) {
