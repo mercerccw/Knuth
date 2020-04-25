@@ -7,6 +7,8 @@ var MClient = mongodb.MongoClient;
 var url = 'mongodb://localhost:27017/TrafficManager';
 // Connect to the server
 
+
+//Get function to grab all AIS messages in collection aisMessage
 router.get('/', function(req, res){
   MClient.connect(url,{useUnifiedTopology: true}, (err, db) => {
     if (err) {
@@ -26,6 +28,31 @@ router.get('/', function(req, res){
           res.send('No documents found');
         }
         //Close connection
+        db.close();
+      });
+    }
+  });
+});
+
+//Get all vessel AIS messages from MMSI identification
+router.get('/MMSI/:mmsi', function (request, response) {
+  const mmsiInput = parseInt(request.params.mmsi);
+  MClient.connect(url, {useUnifiedTopology: true}, async (error, db) => {
+    if (error) {
+      console.log("Unable to connect to the Server", error);
+    } else {
+      console.log("Connection established to", url);
+      let database = db.db("TrafficManager");
+      //Get the documents collection 'aisMessage'
+      let collection = database.collection("aisMessage");
+      await collection.find({"MMSI": mmsiInput}).toArray(function (error, result) {
+        if (error) {
+          response.send(error);
+        } else if (result.length) {
+          response.send(result);
+        } else {
+          response.send('No documents found');
+        }
         db.close();
       });
     }
@@ -64,6 +91,7 @@ router.post('/TrafficService/:timestamp', function (request, response) {
           console.log(error);
         }
         response.send(result);
+        db.close();
       });
     }
   });
