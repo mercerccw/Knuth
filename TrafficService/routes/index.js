@@ -34,6 +34,27 @@ router.get('/', function(req, res){
   });
 });
 
+//Clear all mongo collections, used to clear database before running ais_transmitter
+router.delete('/deleteAll', function (request, response) {
+  MClient.connect(url, {useUnifiedTopology: true}, async (error, db) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Connection established to ", url);
+      let database = db.db("TrafficManager");
+      //Delete documents from collection 'aisMessage'
+      let aisCollection = database.collection('aisMessage');
+      await aisCollection.deleteMany({});
+      //Delete documents from collection 'arrival/departure'
+      let arrivalDepartureCollection = database.collection('arrival/departure');
+      await arrivalDepartureCollection.deleteMany({});
+      response.send("All documents deleted from all collections");
+      db.close();
+    }
+  });
+});
+
+
 //Get all vessel AIS messages from MMSI identification
 router.get('/MMSI/:mmsi', function (request, response) {
   const mmsiInput = parseInt(request.params.mmsi);
