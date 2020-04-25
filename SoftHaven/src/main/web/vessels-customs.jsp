@@ -21,7 +21,10 @@
         <a href="${pageContext.request.contextPath}/">Home</a>
         <h1>Vessel Dashboard</h1>
         <h3>${user.last_name}, ${user.first_name}</h3>
+
+
         <h4>Your job title: ${user.position}</h4>
+        <a href="${pageContext.request.contextPath}/customs">Back to Customs Dashboard</a><br><br>
         <a href="${pageContext.request.contextPath}/logout">Logout</a>
     </div>
     <br><br><br>

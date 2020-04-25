@@ -27,6 +27,7 @@ public class VesselUpdateServlet extends HttpServlet {
             throws ServletException, IOException {
         int imo = Integer.parseInt(request.getParameter("imo"));
         String status = request.getParameter("status");
+
         VesselDAO vesselDAO = new VesselDAO();
         try {
             vesselDAO.updateVesselStatus(imo, status);

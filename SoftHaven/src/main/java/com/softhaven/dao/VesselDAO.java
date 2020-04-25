@@ -46,7 +46,12 @@ public class VesselDAO {
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1, status);
         statement.setInt(2, imo);
+        String sql2 = "Update berths set ship_imo = null where ship_imo = ?";
+        PreparedStatement statement2 = connection.prepareStatement(sql2);
+        statement2.setInt(1, imo);
+        statement2.executeUpdate();
         statement.executeUpdate();
+        connection.close();
     }
 
     public int getNumberOfRows() throws SQLException, ClassNotFoundException {
