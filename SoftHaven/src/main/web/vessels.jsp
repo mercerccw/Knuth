@@ -28,14 +28,15 @@
     <div>
         <form action="vessels" method="get">
             <label style="display: none" for="currentPage"><input value="1" type="number" name="currentPage" id="currentPage" required></label>
-            <label for="vesselsPerPage"><input type="number" name="vesselsPerPage" id="vesselsPerPage" required max="500" min="100"></label>
-            <input type="submit" name="submit" value="submit"/>
+            <label for="vesselsPerPage">Number of Vessels Per Page: <input type="number" name="vesselsPerPage" id="vesselsPerPage" required max="500" min="100"></label>
+            <input type="submit" value="submit"/>
         </form>
         <p>Current Page: ${currentPage}</p>
         <p>Number of Pages: ${numOfPages}</p>
         <p>Vessels Per Page: ${vesselsPerPage}</p>
         <p>Total Number of Vessels: ${numberOfVessels}</p>
     </div>
+    <form action=""></form>
     <%--    <div class="text-center" id="vessels_data">--%>
     <%--        <input type="text" id="imo" onkeyup="filterVessels()" placeholder="Search for IMO..">--%>
     <%--        <input type="text" id="flag" onkeyup="filterVessels()" placeholder="Search for Flag..">--%>
