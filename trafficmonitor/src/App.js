@@ -38,20 +38,42 @@ function App() {
 
     return (
     <div className="App">
-      <Map center={[55.66, 12.7875]} zoom={12}>
+        <h1>Traffic Controller</h1>
+        <Map center={[55.66, 12.7875]} zoom={10}>
         <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
+          {/*Logically present vessels on leaflet map with popup information.*/}
           {aisMessages.length > 0 && aisMessages.map((aisMessage) => {
-              return <Marker position={[aisMessage.PositionReport.Position.coordinates[1], aisMessage.PositionReport.Position.coordinates[0]]} icon={anchor}>
-                  <Popup>VESSEL</Popup>
+              let coordinates = [aisMessage.PositionReport.Position.coordinates[1], aisMessage.PositionReport.Position.coordinates[0]];
+              let messageTimestamp = moment(aisMessage.Timestamp).toISOString();
+              return <Marker position={coordinates} icon={anchor}>
+                  <Popup>
+                      <h3>AIS Message</h3>
+                      <ul>
+                          <li>MMSI: {aisMessage.MMSI}</li>
+                          <li>CoG: {aisMessage.PositionReport.CoG}&deg;</li>
+                          <li>Coordinates:
+                              <ol>
+                                  <li>Lat: {coordinates[0]}</li>
+                                  <li>Lon: {coordinates[1]}</li>
+                              </ol>
+                          </li>
+                          <li>Timestamp: {messageTimestamp}</li>
+                      </ul>
+                  </Popup>
               </Marker>
           })}
           <Marker position={[55.626233, 13.016933]} icon={anchor}>
               <Popup>Vessel information here.</Popup>
           </Marker>
-      </Map>
+        </Map>
+        <h2>AIS Statistics</h2>
+        <h3>Current Information About Active Ships</h3>
+        <section className="stats">
+
+        </section>
     </div>
     );
 }
