@@ -18,6 +18,8 @@
             <a href="${pageContext.request.contextPath}/logout">Logout</a>
             <br><br>
             <a href="${pageContext.request.contextPath}/vessels?vesselsPerPage=50&currentPage=1">Vessel List</a>
+            <br><br>
+            <a href="${pageContext.request.contextPath}/allArrivals">Pre-Arrival Forms</a>
         </div>
     </div>
 
@@ -33,51 +35,54 @@
                placeholder="Search for Ship..">
         <label for="ship_imo">Enter <code>No Ship Docked</code> to see open berths.</label>
         <br><br><br><br><br>
-            <table class="table" id="berths">
-                <tr>
-                    <th scope="col">Port</th>
-                    <th scope="col">Quay</th>
-                    <th scope="col">Terminal Type</th>
-                    <th scope="col">Berth Number</th>
-                    <th scope="col">Ship Docked <strong>(Submit <code>0</code> to clear a booking)</strong></th>
+        <table class="table" id="berths">
+            <tr>
+                <th scope="col">Port</th>
+                <th scope="col">Quay</th>
+                <th scope="col">Terminal Type</th>
+                <th scope="col">Berth Number</th>
+                <th scope="col">Ship Docked <strong>(Submit <code>0</code> to clear a booking)</strong></th>
+            </tr>
+            <c:forEach items="${allBerths}" var="berth">
+                <tr class="data-row">
+                    <td scope="row">${berth.port}</td>
+                    <td scope="row">${berth.quay}</td>
+                    <td scope="row">${berth.type}</td>
+                    <td scope="row">${berth.number}</td>
+                    <c:if test="${berth.ship_imo != 0}">
+                        <td scope="row">
+                            <form action="${pageContext.request.contextPath}/berths/addVessels" method="post">
+                                <label>
+                                        ${berth.ship_imo}
+                                    <input type="text" value="${berth.number}" name="berthNumber" hidden
+                                           style="display: none;"/>
+                                    <input type="text" value="${berth.ship_imo}" name="vessel_imo" hidden
+                                           style="display: none;"/>
+                                    <input type="text" name="shipImo" placeholder="Change Vessel IMO..."/>
+                                </label>
+                                <input class="button" type="submit" value="submit"/>
+
+                            </form>
+
+                        </td>
+                    </c:if>
+                    <c:if test="${berth.ship_imo == 0}">
+                        <td scope="row">
+                            <form action="${pageContext.request.contextPath}/berths/addVessels" method="post">
+                                <label>
+                                    No Ship Docked
+                                    <input type="text" value="${berth.number}" name="berthNumber"
+                                           style="display: none"/>
+                                    <input type="text" name="shipImo" placeholder="Add Vessel IMO..."/>
+                                </label>
+                                <input class="button" type="submit" name="submit" value="submit"/>
+                            </form>
+                        </td>
+                    </c:if>
+
                 </tr>
-                <c:forEach items="${allBerths}" var="berth">
-                    <tr class="data-row">
-                        <td scope="row">${berth.port}</td>
-                        <td scope="row">${berth.quay}</td>
-                        <td scope="row">${berth.type}</td>
-                        <td scope="row">${berth.number}</td>
-                        <c:if test="${berth.ship_imo != 0}">
-                            <td scope="row">
-                                <form action="${pageContext.request.contextPath}/berths/addVessels" method="post">
-                                    <label>
-                                            ${berth.ship_imo}
-                                        <input type="text" value="${berth.number}" name="berthNumber" hidden style="display: none;"/>
-                                        <input type="text" value="${berth.ship_imo}" name="vessel_imo" hidden style="display: none;"/>
-                                        <input type="text" name="shipImo" placeholder="Change Vessel IMO..."/>
-                                    </label>
-                                    <input class="button" type="submit" value="submit"/>
-
-                                </form>
-
-                            </td>
-                        </c:if>
-                        <c:if test="${berth.ship_imo == 0}">
-                            <td scope="row">
-                                <form action="${pageContext.request.contextPath}/berths/addVessels" method="post">
-                                    <label>
-                                            No Ship Docked
-                                        <input type="text" value="${berth.number}" name="berthNumber" style="display: none"/>
-                                        <input type="text" name="shipImo" placeholder="Add Vessel IMO..."/>
-                                    </label>
-                                    <input class="button" type="submit" name="submit" value="submit"/>
-                                </form>
-                            </td>
-                        </c:if>
-
-                    </tr>
-                </c:forEach>
-            </table>
+            </c:forEach>
+        </table>
 
 
     </div>
