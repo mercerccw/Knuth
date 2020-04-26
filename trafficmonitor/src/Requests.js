@@ -11,6 +11,6 @@ export default class Request {
     }
 
     static getRecentAISMessages(timestamp) {
-        return Axios.get(API_BASE_URL + '/recentAIS/' + timestamp);
+        return Axios.get(API_BASE_URL + 'recentAIS/' + timestamp);
     }
 }
