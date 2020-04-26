@@ -25,6 +25,9 @@ public class MasterServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
+        if (session.getAttribute("user") == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+        }
         UserDAO userDao = new UserDAO();
         BerthDAO berthDAO = new BerthDAO();
         User revised_user = null;

@@ -32,6 +32,9 @@ public class AllArrivalsServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
+        if (session.getAttribute("user") == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+        }
         UserDAO userDao = new UserDAO();
         User revised_user = null;
         ArrivalDao arrivalDao = new ArrivalDao();
@@ -71,6 +74,9 @@ public class AllArrivalsServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
+        if (session.getAttribute("user") == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+        }
         UserDAO userDao = new UserDAO();
         User revised_user = null;
         Vessel vessel = new Vessel();

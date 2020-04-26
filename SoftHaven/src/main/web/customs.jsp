@@ -1,6 +1,7 @@
 <%@ page import="com.softhaven.bean.User" %>
 <%@ page import="com.softhaven.dao.UserDAO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Customs</title>
@@ -20,6 +21,11 @@
         <a href="${pageContext.request.contextPath}/vessels?vesselsPerPage=50&currentPage=1">Vessel List</a>
         <br><br>
         <a href="${pageContext.request.contextPath}/allReviewForms">Pre-Arrival Forms</a>
+    </div>
+    <div>
+        <c:if test="${forms != null}">
+            <h1>You have Pre-Arrival forms to review</h1>
+        </c:if>
     </div>
 </div>
 </body>
