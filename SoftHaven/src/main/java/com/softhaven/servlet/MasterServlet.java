@@ -1,6 +1,8 @@
 package com.softhaven.servlet;
 
+import com.softhaven.bean.Arrival;
 import com.softhaven.bean.User;
+import com.softhaven.dao.ArrivalDao;
 import com.softhaven.dao.BerthDAO;
 import com.softhaven.dao.UserDAO;
 
@@ -25,12 +27,13 @@ public class MasterServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        if (session.getAttribute("user") == null){
+        if (session.getAttribute("user") == null) {
             response.sendRedirect(request.getContextPath() + "/login");
         }
         UserDAO userDao = new UserDAO();
         BerthDAO berthDAO = new BerthDAO();
         User revised_user = null;
+        ArrivalDao arrivalDao = new ArrivalDao();
         try {
             revised_user = userDao.checkPosition(user.getEmail());
             assert revised_user != null;
@@ -51,6 +54,8 @@ public class MasterServlet extends HttpServlet {
                 } else {
                     request.setAttribute("berth_message", "There are no available berths.");
                 }
+                List<Arrival> approvedForms = arrivalDao.fetchFormsByEmail(user.getEmail());
+                request.setAttribute("approvedForms", approvedForms);
                 request.getRequestDispatcher("master.jsp").forward(request, response);
             }
         } catch (Exception e) {
