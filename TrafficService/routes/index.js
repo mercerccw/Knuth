@@ -48,7 +48,7 @@ router.get('/recentAIS/:timestamp', function (request, response) {
       let aisCollection = database.collection('aisMessage');
       await aisCollection.find({}).toArray(function (error, result) {
         if (error) {
-          response.send(err);
+          response.send(error);
         } else if (result.length) {
           let filteredResult = [];
           for (let i = 0; i < result.length; i++) {
