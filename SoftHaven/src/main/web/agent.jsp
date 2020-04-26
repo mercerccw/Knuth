@@ -21,6 +21,11 @@
             <br><br>
             <a href="${pageContext.request.contextPath}/allReviewForms">Pre-Arrival Forms</a>
         </div>
+        <div>
+            <c:if test="${forms != null}">
+                <h1>You have Pre-Arrival forms to review</h1>
+            </c:if>
+        </div>
     </div>
 
     <br><br><br>

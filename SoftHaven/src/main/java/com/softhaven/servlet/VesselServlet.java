@@ -28,6 +28,9 @@ public class VesselServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
+        if (session.getAttribute("user") == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+        }
         UserDAO userDao = new UserDAO();
         User revised_user = null;
         try {
