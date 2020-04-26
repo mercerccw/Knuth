@@ -13,7 +13,7 @@
 <body>
 <div style="text-align: center">
     <a href="${pageContext.request.contextPath}/">Home</a>
-    <h1>Ship Master</h1>
+    <h1>Ship Master Dashboard</h1>
     <h3>${user.last_name}, ${user.first_name}</h3>
     <h4>Your job title: ${user.position}</h4>
     <a href="${pageContext.request.contextPath}/logout">Logout</a>
@@ -65,19 +65,19 @@
                 <input name="discharging_cargo_description" size="100" id="discharging_cargo_description" required/>
                 <br><br>
                 <label for="discharging_cargo_amount">Discharging Cargo Amount</label>
-                <input name="discharging_cargo_amount" id="discharging_cargo_amount" required/>
+                <input name="discharging_cargo_amount" type="number" min="0" id="discharging_cargo_amount" required />
                 <br><br>
                 <label for="loading_cargo_description">Loading Cargo Description</label>
                 <input name="loading_cargo_description" size="100" id="loading_cargo_description" required/>
                 <br><br>
                 <label for="loading_cargo_amount">Loading Cargo Amount</label>
-                <input name="loading_cargo_amount" id="loading_cargo_amount" required/>
+                <input name="loading_cargo_amount" id="loading_cargo_amount" type="number" min="0" required/>
                 <br><br>
                 <label for="number_of_passengers_arrival">Number of Passengers Arrival</label>
-                <input name="number_of_passengers_arrival" id="number_of_passengers_arrival" required/>
+                <input name="number_of_passengers_arrival" type="number" min="0" id="number_of_passengers_arrival" required/>
                 <br><br>
                 <label for="number_of_passengers_departure">Number of Passengers Departure</label>
-                <input name="number_of_passengers_departure" id="number_of_passengers_departure" required/>
+                <input name="number_of_passengers_departure" type="number" min="0" id="number_of_passengers_departure" required/>
                 <br><br>
                 <br><br>
                 <button type="submit">Submit for Review</button>
