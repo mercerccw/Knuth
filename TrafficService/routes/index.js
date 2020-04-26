@@ -35,7 +35,7 @@ router.get('/', function(req, res){
   });
 });
 
-//Get function to grab most recent AIS messages within the last 30 seconds (one per vessel)
+//Get function to grab most recent AIS messages within the last 50 seconds (one per vessel)
 router.get('/recentAIS/:timestamp', function (request, response) {
   let timeStamp = request.params.timestamp;
   let formatedTimeStamp = new Date(timeStamp);
@@ -53,8 +53,8 @@ router.get('/recentAIS/:timestamp', function (request, response) {
           let filteredResult = [];
           for (let i = 0; i < result.length; i++) {
             let messageTimeStamp = new Date(result[i]['Timestamp']);
-            let timeFrame = dateFNS.subSeconds(formatedTimeStamp, 30);
-            //Logic to determine if ais message was within the 30 second time frame from the inputted parameter
+            let timeFrame = dateFNS.subSeconds(formatedTimeStamp, 50);
+            //Logic to determine if ais message was within the 50 second time frame from the inputted parameter
             if (dateFNS.compareAsc(messageTimeStamp, timeFrame) === 1 && dateFNS.compareAsc(formatedTimeStamp, messageTimeStamp) === 1) {
               filteredResult.push(result[i]);
             }
