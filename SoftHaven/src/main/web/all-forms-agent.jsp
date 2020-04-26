@@ -28,6 +28,7 @@
     <div style="text-align: center">
         <table class="table">
             <tr>
+                <th>Submitted By</th>
                 <th>IMO Number</th>
                 <th>Agent Email</th>
                 <th>Arriving From</th>
@@ -42,9 +43,11 @@
                 <th>Number of Passengers (Arrival)</th>
                 <th>Number of Passenger (Departure)</th>
                 <th>Berth Validation</th>
+
             </tr>
             <c:forEach items="${approvedForms}" var="form">
                 <tr>
+                    <td>${form.submitted_by}</td>
                     <td>${form.imo_number}</td>
                     <td>${form.agent_email}</td>
                     <td>${form.arriving_from}</td>

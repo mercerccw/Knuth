@@ -28,6 +28,7 @@
     <div style="text-align: center">
         <table class="table">
             <tr>
+                <th>Submitted By</th>
                 <th>IMO Number</th>
                 <th>Agent Email</th>
                 <th>Arriving From</th>
@@ -45,6 +46,7 @@
             </tr>
             <c:forEach items="${unApprovedForms}" var="form">
                 <tr>
+                    <td>${form.submitted_by}</td>
                     <td>${form.imo_number}</td>
                     <td>${form.agent_email}</td>
                     <td>${form.arriving_from}</td>
@@ -58,6 +60,7 @@
                     <td>${form.loading_cargo_amount}</td>
                     <td>${form.number_of_passengers_arrival}</td>
                     <td>${form.number_of_passengers_departure}</td>
+
                     <td>
                         <form action="${pageContext.request.contextPath}/allReviewForms" method="post">
                             <label for="validation">

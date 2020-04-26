@@ -110,7 +110,9 @@ public class ArrivalServlet extends HttpServlet {
                             int loading_cargo_amount = Integer.parseInt(request.getParameter("loading_cargo_amount"));
                             int number_of_passengers_arrival = Integer.parseInt(request.getParameter("number_of_passengers_arrival"));
                             int number_of_passengers_departure = Integer.parseInt(request.getParameter("number_of_passengers_departure"));
+                            String submitted_by = request.getParameter("user_email");
                             arrivalForm.setImo_number(imo);
+                            arrivalForm.setSubmitted_by(submitted_by);
                             arrivalForm.setAgent_email(agent_email);
                             arrivalForm.setArriving_from(arriving_from);
                             arrivalForm.setEta(formatted_eta);

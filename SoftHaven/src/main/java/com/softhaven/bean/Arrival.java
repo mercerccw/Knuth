@@ -10,8 +10,7 @@ public class Arrival {
     String berth_number;
     int next_port_id;
     String next_port_name;
-
-
+    String submitted_by;
     String etd;
     String discharging_cargo_description;
     int discharging_cargo_amount;
@@ -25,6 +24,14 @@ public class Arrival {
 
     public int getShip_berthed() {
         return ship_berthed;
+    }
+
+    public String getSubmitted_by() {
+        return submitted_by;
+    }
+
+    public void setSubmitted_by(String submitted_by) {
+        this.submitted_by = submitted_by;
     }
 
     public void setShip_berthed(int ship_berthed) {
