@@ -16,8 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-@WebServlet("/allArrivals")
+@WebServlet("/allReviewForms")
 public class AllArrivalsServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -32,6 +34,9 @@ public class AllArrivalsServlet extends HttpServlet {
         User user = (User) session.getAttribute("user");
         UserDAO userDao = new UserDAO();
         User revised_user = null;
+        ArrivalDao arrivalDao = new ArrivalDao();
+        List<Arrival> unApprovedForms = new ArrayList<>();
+        List<Arrival> approvedForms = new ArrayList<>();
         try {
             revised_user = userDao.checkPosition(user.getEmail());
             assert revised_user != null;
@@ -40,9 +45,19 @@ public class AllArrivalsServlet extends HttpServlet {
             if (!user.getPosition().equals("customs") && !user.getPosition().equals("agent")) {
                 response.sendRedirect(request.getContextPath() + "/" + user.getPosition());
             } else {
+                unApprovedForms = arrivalDao.fetchAllUnApprovedForms();
+                if (unApprovedForms.size() <= 0) {
+                    unApprovedForms = null;
+                }
+                approvedForms = arrivalDao.fetchAllApprovedForms(user.getEmail());
+                if (approvedForms.size() <= 0) {
+                    approvedForms = null;
+                }
                 if(user.getPosition().equals("customs")){
+                    request.setAttribute("unApprovedForms", unApprovedForms);
                     request.getRequestDispatcher("all-forms-customs.jsp").forward(request, response);
                 } else {
+                    request.setAttribute("approvedForms", approvedForms);
                     request.getRequestDispatcher("all-forms-agent.jsp").forward(request, response);
                 }
 
@@ -69,10 +84,32 @@ public class AllArrivalsServlet extends HttpServlet {
             assert revised_user != null;
             user.setPosition(revised_user.getPosition());
             session.setAttribute("user", user);
-            if (!user.getPosition().equals("customs")) {
+            if (!user.getPosition().equals("customs") && !user.getPosition().equals("agent")) {
                 response.sendRedirect(request.getContextPath() + "/" + user.getPosition());
             } else {
-                System.out.println("hello");
+                if (user.getPosition().equals("customs")){
+                    int state = Integer.parseInt(request.getParameter("validate"));
+                    int id = Integer.parseInt(request.getParameter("id"));
+                    if(state == 1){
+                        arrivalDao.approveForm(id, state);
+                    } else if (state == 0) {
+                        arrivalDao.approveForm(id, state);
+                    }
+                    response.sendRedirect(request.getContextPath() + "/allReviewForms");
+                } else if (user.getPosition().equals("agent")){
+                    int state = Integer.parseInt(request.getParameter("validate"));
+                    int id = Integer.parseInt(request.getParameter("id"));
+                    if(state == 1){
+                        arrivalDao.approveBerth(id, state);
+                    } else if (state == 0){
+                        arrivalDao.approveBerth(id, state);
+                    }
+                    response.sendRedirect(request.getContextPath() + "/allReviewForms");
+                } else {
+                    response.sendRedirect(request.getContextPath() + "/allReviewForms");
+                }
+
+
             }
         } catch (Exception e) {
             e.printStackTrace();

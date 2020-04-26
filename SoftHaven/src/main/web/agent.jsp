@@ -19,7 +19,7 @@
             <br><br>
             <a href="${pageContext.request.contextPath}/vessels?vesselsPerPage=50&currentPage=1">Vessel List</a>
             <br><br>
-            <a href="${pageContext.request.contextPath}/allArrivals">Pre-Arrival Forms</a>
+            <a href="${pageContext.request.contextPath}/allReviewForms">Pre-Arrival Forms</a>
         </div>
     </div>
 

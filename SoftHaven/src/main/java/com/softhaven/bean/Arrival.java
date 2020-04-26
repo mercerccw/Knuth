@@ -9,6 +9,9 @@ public class Arrival {
     String eta;
     String berth_number;
     int next_port_id;
+    String next_port_name;
+
+
     String etd;
     String discharging_cargo_description;
     int discharging_cargo_amount;
@@ -18,6 +21,15 @@ public class Arrival {
     int number_of_passengers_departure;
     String crew_documents_customs;
     int form_validation;
+    int ship_berthed;
+
+    public int getShip_berthed() {
+        return ship_berthed;
+    }
+
+    public void setShip_berthed(int ship_berthed) {
+        this.ship_berthed = ship_berthed;
+    }
 
     public int getId() {
         return id;
@@ -25,6 +37,14 @@ public class Arrival {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNext_port_name() {
+        return next_port_name;
+    }
+
+    public void setNext_port_name(String next_port_name) {
+        this.next_port_name = next_port_name;
     }
 
     public int getImo_number() {

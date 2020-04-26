@@ -103,10 +103,10 @@ public class ArrivalServlet extends HttpServlet {
                             int port_number = berthDAO.getPortNumber(berth_number);
                             String discharging_cargo_description = request.getParameter("discharging_cargo_description");
                             int discharging_cargo_amount = Integer.parseInt(request.getParameter("discharging_cargo_amount"));
-                            String loading_cargo_description = request.getParameter("discharging_cargo_amount");
-                            int loading_cargo_amount = Integer.parseInt(request.getParameter("discharging_cargo_amount"));
-                            int number_of_passengers_arrival = Integer.parseInt(request.getParameter("discharging_cargo_amount"));
-                            int number_of_passengers_departure = Integer.parseInt(request.getParameter("discharging_cargo_amount"));
+                            String loading_cargo_description = request.getParameter("loading_cargo_description");
+                            int loading_cargo_amount = Integer.parseInt(request.getParameter("loading_cargo_amount"));
+                            int number_of_passengers_arrival = Integer.parseInt(request.getParameter("number_of_passengers_arrival"));
+                            int number_of_passengers_departure = Integer.parseInt(request.getParameter("number_of_passengers_departure"));
                             arrivalForm.setImo_number(imo);
                             arrivalForm.setAgent_email(agent_email);
                             arrivalForm.setArriving_from(arriving_from);
