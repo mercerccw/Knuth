@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import * as request from './Requests';
+import React, {useEffect, useState} from 'react';
+import Request from './Requests';
 import './App.css';
 import {Map, Marker, Popup, TileLayer} from "react-leaflet";
 import { Icon } from "leaflet";
@@ -17,8 +17,10 @@ const anchor = new Icon({
 });
 
 function App() {
+    const [aisMessages, updateAISMessages] = useState(null);
+
     useEffect(() => {
-        console.log(request.getAllAISMessages());
+        Request.getAllAISMessages().then(res => updateAISMessages(res.data));
     }, []);
 
     return (

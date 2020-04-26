@@ -2,8 +2,11 @@
 //Created with the help of Axios and config.js, this implements the REST client through attaching it to functions.
 
 import Axios from "axios";
-import {API_BASE} from "./config";
+import API_BASE_URL from "./config";
 
-export const getAllAISMessages = () => Axios.get(API_BASE + '').then(function (response) {
-    return response.data;
-});
+export default class Request {
+
+    static getAllAISMessages() {
+        return Axios.get(API_BASE_URL);
+    }
+}
