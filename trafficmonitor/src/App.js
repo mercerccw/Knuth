@@ -22,6 +22,7 @@ function App() {
     const [timestamp, updateTimestamp] = useState(moment(new Date("2018-09-11T10:38:00Z")));
     const [averageCoG, updateAverageCoG] = useState("0");
     const [averageSoG, updateAverageSoG] = useState("0");
+    const [destinationList, updateDestinationList] = useState([]);
 
     //This makes a request per second to update the active AIS messages to render
     useEffect(() => {
@@ -65,6 +66,30 @@ function App() {
         }
     }, [aisMessages]);
 
+    useEffect(() => {
+        let loctionList = [];
+        aisMessages.map(message => {
+            if (message.StaticData) {
+                if (message.StaticData.Destination) {
+                    loctionList.push(message.StaticData.Destination);
+                }
+            }
+        });
+        updateDestinationList(loctionList);
+    }, [aisMessages]);
+
+    const renderDestinations = () => {
+        if (destinationList.length === 0) {
+            return <p>No active destinations listed.</p>
+        } else {
+            return <ul>
+                {destinationList.map(destination => {
+                    return <li>{destination}</li>;
+                })}
+            </ul>
+        }
+    };
+
     return (
     <div className="App">
         <h1>Traffic Controller</h1>
@@ -104,6 +129,7 @@ function App() {
             <p>Average SoG: {averageSoG} knots</p>
             <br/>
             <h4>List of Gathered Destinations from Ships:</h4>
+            {renderDestinations()}
         </section>
     </div>
     );
