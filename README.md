@@ -16,11 +16,11 @@ Java EE application SoftHaven setup
 6. Select the option in the navigation bar on the left side under <strong>Resources</strong> that says <strong>JDBC</strong>
 7. Under JDBC Connection Pools, create a new pool
 8. Enter the information provided below and save
-![image 1](readmeImages\1.png)
-![image 1](readmeImages\2.png)
+![image 1](1.png)
+![image 1](2.png)
 9. Under <strong>Resources</strong> that says <strong>JDBC</strong> in the navigation bar select JDBC Resources
 10. Create a new Resources with the information provided below and save
-![image 1](readmeImages\3.png)
+![image 1](3.png)
 11. Clone the repo
         (The Java side is inside the <strong>SoftHaven</strong> folder.)
 12. Create a folder in the <code>src/main/java/com/sofhaven/</code> called <code>config</code>.
