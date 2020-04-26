@@ -19,7 +19,7 @@ const anchor = new Icon({
 
 function App() {
     const [aisMessages, updateAISMessages] = useState([]);
-     const [timestamp, updateTimestamp] = useState(new Date("2018-09-11T10:38:00Z"));
+     const [timestamp, updateTimestamp] = useState(moment(new Date("2018-09-11T10:38:00Z")));
 
     useEffect(() => {
     }, []);
@@ -34,7 +34,7 @@ function App() {
             updateTimestamp(momentTime.add(1, 's'));
         }, 1000);
         return () => clearInterval(interval);
-    }, []);
+    }, [timestamp, aisMessages]);
 
     return (
     <div className="App">
