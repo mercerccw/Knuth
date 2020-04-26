@@ -65,9 +65,6 @@ function App() {
                   </Popup>
               </Marker>
           })}
-          <Marker position={[55.626233, 13.016933]} icon={anchor}>
-              <Popup>Vessel information here.</Popup>
-          </Marker>
         </Map>
         <h2>AIS Statistics</h2>
         <h3>Current Information About Active Ships</h3>
