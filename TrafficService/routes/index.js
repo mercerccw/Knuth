@@ -138,6 +138,16 @@ router.post('/TrafficService/:timestamp', function (request, response) {
       let database = db.db("TrafficManager");
       //Get the documents collection 'aisMessage'
       let collection = database.collection("aisMessage");
+      //Delete old AIS messages that contain the same MMSI from the to-be inserted list
+      collection.find().forEach(function (document) {
+        for (let i = 0; i < filteredMessages.length; i++) {
+          if (document.MMSI === filteredMessages[i].MMSI) {
+            console.log("Document deleted: ", document);
+            console.log("Document inserted: ", filteredMessages[i]);
+            collection.deleteOne(document);
+          }
+        }
+      });
       await collection.insertMany(filteredMessages);
       //Return newly updated collection, it doesn't require any null checks
       collection.find({}).toArray(function (error, result) {

@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
+import Request from './Requests';
 import './App.css';
 import {Map, Marker, Popup, TileLayer} from "react-leaflet";
 import { Icon } from "leaflet";
@@ -17,7 +17,13 @@ const anchor = new Icon({
 });
 
 function App() {
-  return (
+    const [aisMessages, updateAISMessages] = useState(null);
+
+    useEffect(() => {
+        Request.getAllAISMessages().then(res => updateAISMessages(res.data));
+    }, []);
+
+    return (
     <div className="App">
       <Map center={[55.66, 12.7875]} zoom={12}>
         <TileLayer
@@ -29,7 +35,7 @@ function App() {
           </Marker>
       </Map>
     </div>
-  );
+    );
 }
 
 export default App;
