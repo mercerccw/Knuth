@@ -3,9 +3,9 @@
 
 <strong>There are two sections to the Final Project</strong>
 1. Jave EE application
-2. Node and React side
+2. JavaScript application
 
-### Setup Instructions:
+### Setup Instructions
 <strong>Java EE application SoftHaven setup</strong>
 1. Download the Glassfish 4.1 installation from https://javaee.github.io/glassfish/download
 2. Download the MySQL Connector J 8.0.19 from https://dev.mysql.com/downloads/connector/j/
@@ -66,4 +66,30 @@
 ![image](TrafficMonitor.png)
 19. Now you're all complete! Enjoy using Traffic Monitor!
 
+
+### Project Structure
+<strong>AIS Transmitter</strong><br>
+<ul>
+    <li><i>Purpose</i>: Program used to simulate the uploading of vessel AIS messages.</li>
+    <li><i>Location</i>: Contained within the <code>ais_transmitter</code> directory.</li>
+    <li><i>Application Uses</i>: Information used by the JavaScript application.</li>
+</ul>
+<strong>Softhaven</strong><br>
+<ul>
+    <li><i>Purpose</i>: Program used by ship masters, ship agents, customs officers to view vessel information and arrival/departure forms.</li>
+    <li><i>Location</i>: Contained within the <code>Softhaven</code> directory.</li>
+    <li><i>Application Uses</i>: Used within the JavaEE application.</li>
+</ul>
+<strong>Traffic Monitor</strong><br>
+<ul>
+    <li><i>Purpose</i>: Frontend application to view AIS messages through a map GUI and showcases related statistics.</li>
+    <li><i>Location</i>: Contained within the <code>trafficmonitor</code> directory.</li>
+    <li><i>Application Uses</i>: Used within the JavaScript application.</li>
+</ul>
+<strong>TrafficService</strong><br>
+<ul>
+    <li><i>Purpose</i>: Backend REST service used by anyone to interact with any data contained within recent AIS messages.</li>
+    <li><i>Location</i>: Contained within the <code>TrafficService</code> directory.</li>
+    <li><i>Appliction Uses</i>: Used within the JavaScript application.</li>
+</ul>
 
