@@ -5,6 +5,7 @@ __There are two sections to the Final Project__
 1. Jave EE application
 2. JavaScript application
 
+
 ### Setup Instructions
 __Java EE application SoftHaven setup__
 1. Download the Glassfish 4.1 installation from https://javaee.github.io/glassfish/download
@@ -37,7 +38,6 @@ __Java EE application SoftHaven setup__
 24. Click __Launch__
 25. Click the http:// link
 26. Now you're all done! Enjoy using SoftHaven!
-
 
 __Node and React Traffic Monitor setup__
 1. Download the Node 12.16.2 LTS version from https://nodejs.org/en/download/
@@ -85,6 +85,30 @@ __TrafficService__<br>
 * _Location_: Contained within the `TrafficService` directory.
 * _Appliction Uses_: Used within the JavaScript application.
 
-### Tech/Framework/Libraries Used
-__JavaScript application uses:__
 
+### Tech/Framework/Libraries Used
+__JavaScript Application Uses:__
+* AIS Transmitter
+  * MongoDB Driver (https://www.npmjs.com/package/mongodb)
+* Traffic Monitor
+  * React Library (https://reactjs.org/)
+  * Moment Library (https://momentjs.com/)
+  * React Leaflet Library (https://react-leaflet.js.org/en/)
+  * Leaflet Library (https://leafletjs.com/)
+  * NPM Package Manager (https://www.npmjs.com/)
+* Traffic Service
+  * Express Framework
+  * Body-Parser Library (https://www.npmjs.com/package/body-parser)
+  * Cookie-Parser Library (https://www.npmjs.com/package/cookie-parser)
+  * Date-FNS Library (https://date-fns.org/)
+  * Logger Library (https://www.npmjs.com/package/logger)
+  * MongoDB Driver (https://www.npmjs.com/package/mongodb)
+
+__JavaEE Application Uses:__
+* Softhaven
+  * Glassfish 4.1 (https://javaee.github.io/glassfish/download)
+  * MySQL Connector J 8.0.19 (https://dev.mysql.com/downloads/connector/j/)
+
+-----
+### License
+__MIT © Knuth Team__

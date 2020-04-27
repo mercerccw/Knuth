@@ -1,11 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var mongodb = require('mongodb');
+const express = require('express');
+const router = express.Router();
+const mongodb = require('mongodb');
 const dateFNS = require('date-fns')
 // Get a Mongo client to work with the Mongo server
-var MClient = mongodb.MongoClient;
+const MClient = mongodb.MongoClient;
 // Define where the MongoDB database is
-var url = 'mongodb://localhost:27017/TrafficManager';
+const url = 'mongodb://localhost:27017/TrafficManager';
 // Connect to the server
 
 
