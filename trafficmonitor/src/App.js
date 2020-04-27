@@ -68,7 +68,7 @@ function App() {
 
     useEffect(() => {
         let loctionList = [];
-        aisMessages.map(message => {
+        aisMessages.forEach(message => {
             if (message.StaticData) {
                 if (message.StaticData.Destination) {
                     loctionList.push(message.StaticData.Destination);
@@ -90,6 +90,16 @@ function App() {
         }
     };
 
+    const isMoored = (message) => {
+        if (message.PositionReport.NavigationalStatus) {
+            let status = message.PositionReport.NavigationalStatus;
+            if (status.includes("Moored") || status.includes("anchor")) {
+                return true;
+            }
+        }
+        return false;
+    };
+
     return (
     <div className="App">
         <h1>Traffic Controller</h1>
@@ -103,7 +113,9 @@ function App() {
           {aisMessages.length > 0 && aisMessages.map((aisMessage) => {
               let coordinates = [aisMessage.PositionReport.Position.coordinates[1], aisMessage.PositionReport.Position.coordinates[0]];
               let messageTimestamp = moment(aisMessage.Timestamp).toISOString();
-              return <Marker position={coordinates} icon={anchor}>
+              let mooredStatus = isMoored(aisMessage);
+              let icon = mooredStatus ? anchor : vessel;
+              return <Marker position={coordinates} icon={icon} key={aisMessage.MMSI}>
                   <Popup>
                       <h3>AIS Message</h3>
                       <ul>

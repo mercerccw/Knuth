@@ -61,6 +61,7 @@ __Node and React Traffic Monitor setup__
 17. Open a new terminal and cd into the `ais_transmitter` directory, and run `node index.js` to start the application.
 17. Open a new terminal an cd into the `trafficmonitor` directory, and run `npm start` to start the application.<br>
     (If prompted about running the application on another port, type in "y").
+    __IMPORTANT:__ This must be running at the same time as `ais_transmitter` or the vessels won't properly render.
 18. Go to the URL listed by the `trafficmonitor` program (which should be http://localhost:3001).<br>
     The final application should look similar to the image below.
 ![Traffic Monitor](TrafficMonitor.png)
@@ -108,6 +109,19 @@ __JavaEE Application Uses:__
 * Softhaven
   * Glassfish 4.1 (https://javaee.github.io/glassfish/download)
   * MySQL Connector J 8.0.19 (https://dev.mysql.com/downloads/connector/j/)
+
+
+### Contribute
+This project is currently needing implementation to connect these two related programs.
+* Softhaven needs the AIS message history from a ship with a request MMSI.
+  * The request for this history has already been written in the Traffic Service backend!
+* Traffic Monitor needs to access the pre-arrival data from Sofhaven.
+Contribute to this project through making a pull request @ https://github.com/nicolasrenet/Knuth.
+
+
+### Credits
+Special thanks to Nicolas Renet for professoring this project. May the seas ease our minds.
+
 
 -----
 ### License
